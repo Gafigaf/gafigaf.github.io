@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(https://cdn.stocksnap.io/img-thumbs/960w/ELFN8SNYQ6.jpg)no-repeat center center ;
+	background-size:cover;
+	background-attachment: fixed; 
+	font-family: 'Ubuntu', sans-serif;
+	padding: 5%
+}
+article{
+	font-size:1.5vw;
+	color:#FFF;
+	line-height: 1.5;
+	margin-bottom:50%; 
+	padding: 10%;
+	background-color:rgba(0,0,0,0.7); 
+}
+p,li{
+	margin-bottom: 1em;
+}
+h1{
+	font-family: 'Ubuntu', sans-serif;
+font-family: 'Poiret One', cursive;
+font-size:10vh;
+color: #fff;
+line-height: 0.8;
+margin: 2em 0 1em;
+text-shadow: 0 0 2vw #000;
+}
+h1 span{
+	font-size:3vw;
+	position: relative;
+	top:1em;
+	display: block;
+	color: #FFFF00;
+	text-shadow: none; 
+}
+h2{
+	color:#33FF66;
+	font-size: 3vw;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color:#33FF66;
+}
+a:hover{
+	color: red;
+	transition: all 0.7s;
+}
+.dropcap{
+	font-size:500%;
+	line-height:0.88;
+	float: left;
+	margin-right: 10px;
+	color: #33FF66; 
+}
+footer #button{
+	width: 35px;
+	height: 35px;
+	border: 12px solid #33FF66;
+	border-radius: 36px;
+	margin: 0 auto;
+	position: relative;
+	transition: all 1s ease;
+	bottom: 35px;
+}
+footer #button:hover{
+	border: 12px solid red;
+	transition: all 1s ease;
+	position: relative;
+}
+footer{
+	width:100vw;
+	height: 2em;
+margin:0;
+padding: 0;
+position: fixed;
+bottom:0;
+left:0;
+background-color:rgba(0,0,0,0.5);
+transition:all 1s ease;
+z-index: 999; 
+}
+footer:hover{
+	transition: all 1s ease;
+height: 10em;
+}
+footer #container{
+	margin-top: 5px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+top:0;
+left:0;
+background-color: rgba(0,0,0,0.1);
+}
+footer #cont{
+	position: relative;
+	top:-45px;
+	right: 190px;
+	width: 150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width: 500px;
+	float: left;
+	text-align: center;
+	color: white;
+}
+footer h3{
+	font-size:30px;
+	margin-top:70px;
+	margin-left: 40px; 
+}
+.gallery{
+	width: 100%;
+	height:100%;
+}
