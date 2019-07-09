@@ -4,8 +4,9 @@
 	margin:0;
 	padding:0;
 }
+/*background:url()no-repeat center center ;*/
 body{
-	background:url(https://www.managementstack.com/wp-content/uploads/2016/06/U3W2SHOLWQ.jpg)no-repeat center center ;
+	background-color:#465a7a;
 	background-size:cover;
 	background-attachment: fixed; 
 	font-family: 'Ubuntu', sans-serif;
@@ -17,7 +18,7 @@ article{
 	line-height: 1.5;
 	margin-bottom:50%; 
 	padding: 10%;
-	background-color:rgba(0,0,0,0.7); 
+	background-color:rgba(0,0,0,0.8); 
 }
 p,li{
 	margin-bottom: 1em;
@@ -30,17 +31,18 @@ color: #fff;
 line-height: 0.8;
 margin: 2em 0 1em;
 text-shadow: 0 0 2vw #000;
+text-align: center;
 }
 h1 span{
 	font-size:3vw;
 	position: relative;
 	top:1em;
 	display: block;
-	color: white;
+	color:#fff;
 	text-shadow: none; 
 }
 h2{
-	color:#33FF66;
+	color: #fff;
 	font-size: 3vw;
 	text-align: center;
 }
@@ -53,11 +55,11 @@ a:hover{
 	transition: all 0.7s;
 }
 .dropcap{
-	font-size:500%;
+	font-size:400%;
 	line-height:0.88;
 	float: left;
 	margin-right: 10px;
-	color: #33FF66; 
+	color: #fff; 
 }
 footer #button{
 	width: 35px;
