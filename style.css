@@ -48,6 +48,7 @@ h2{
 	color: #fff;
 	font-size: 3vw;
 	text-align: center;
+	padding-bottom: 100px;
 }
 a{
 	text-decoration: none;
@@ -57,13 +58,10 @@ a:hover{
 	color: red;
 	transition: all 0.7s;
 }
-.dropcap{
-	font-size:400%;
-	line-height:0.88;
-	float: left;
-	margin-right: 10px;
-	color: #fff; 
+p{
+	margin-top: 10px;
 }
+
 footer #button{
 	width: 35px;
 	height: 35px;
@@ -129,4 +127,81 @@ footer h3{
 .gallery{
 	width: 100%;
 	height:100%;
+}
+body{
+ background-image: url("../img/ep_naturalwhite.png");
+}
+header{
+ margin-top: 50px;
+ font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.dws-menu > ul li{
+ position: relative;
+ border-right: 1px solid #ffffff;
+}
+.dws-menu > ul li:first-child{
+ border-left: 1px solid #ffffff;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #ffffff;
+}
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+.dws-menu > ul li a{
+ display: block;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+ background:#2F8DCB; /* Old browsers */
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color:#ffffff;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+ background:#354B5F; /* Old browsers */
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: 1px solid #2F8DCB;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #2F8DCB;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
 }
