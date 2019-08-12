@@ -33,6 +33,9 @@ margin: 2em 0 1em;
 text-shadow: 0 0 2vw #000;
 text-align: center;
 }
+#imgage{
+	padding-top: 100px;
+}
 h1 span{
 	font-size:3vw;
 	position: relative;
@@ -75,6 +78,9 @@ footer #button:hover{
 	border: 12px solid red;
 	transition: all 1s ease;
 	position: relative;
+}
+#end{
+	margin-top:100px; 
 }
 footer{
 	width:100vw;
