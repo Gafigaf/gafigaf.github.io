@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Ubuntu');
+body{
+	background-size:cover;
+	background-attachment: fixed; 
+	font-family: 'Ubuntu', sans-serif;
+}
+p{
+	font-size: 20px;
+}
+#vvod{
+	font-size: 20px;
+	border-radius: 15px;
+}
+h4{
+	color: #797c82;
+}
