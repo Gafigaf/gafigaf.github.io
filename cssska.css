@@ -5,7 +5,7 @@
 }
 /*background:url()no-repeat center center ;*/
 body{
-	background:url(https://i.ytimg.com/vi/-NmTWxS5c-E/maxresdefault.jpg)no-repeat center center ;
+	background:url(https://image.freepik.com/free-photo/modern-futuristic-neon-light-background_33739-414.jpg)no-repeat center center ;
 	background-size:cover;
 	background-attachment: fixed; 
 	font-family: 'Ubuntu', sans-serif;
@@ -27,17 +27,63 @@ article{
 	padding: 10%;
 	background-color:rgba(0,0,0,0.8); 
 }
+#first,#second,#thirsd{
+	background-color:rgba(0,0,0,0.6); 
+	color:#FFF;
+}
 p{
 	font-size: 35px;
 	padding-top: 20px;
 	margin-top:10px;
 	font-family: 'Ubuntu', sans-serif;
-
 }
+
 #vvod{
 	font-size: 20px;
 	border-radius: 45px;
-	padding:7px;
+	padding:8px;
+	background-color:rgba(0,0,0,0.8); 
+	color:#FFFFFF;
+	border-color: #8D8E8E;
+	margin-right: 10px;
+}
+#next{
+	font-size: 20px;
+	border-radius: 45px;
+	padding:8px;
+	background-color:rgba(0,0,0,0.8); 
+	color:#FFFFFF;
+	border-color: #8D8E8E;
+	margin-right: 10px;
+	font-size: 20px;
+	border-radius: 45px;
+	padding:8px;
+	background-color:rgba(0,0,0,0.8); 
+	color:#FFFFFF;
+	border-color: #8D8E8E;
+	margin-top: 50px;
+
+}
+#vvod:hover{
+	color:#42C1FD;
+	border-color:#42C1FD;
+	transition:ease-out 0.4s;
+
+}
+#ohict{
+	font-size: 20px;
+	border-radius: 45px;
+	padding:8px;
+	background-color:rgba(0,0,0,0.8); 
+	color:#FFFFFF;
+	border-color: #8D8E8E;
+	margin-right: 10px;
+}
+#ohict:hover{
+	color:#FF695E;
+	border-color:#FF695E;
+	transition:0.4s ease;
+
 }
 h4{
 	color: #797c82;
