@@ -95,3 +95,38 @@ input{
 	border-radius: 15px;
 	padding:5px;
 }
+a{
+	color:#0059ff;
+	text-decoration: none;
+}
+a:hover{
+	color:#ff0000;
+}
+#But{
+	font-size: 25px;
+	border-radius: 15px;
+	background-color:rgba(0,0,0,0.8); 
+	color:#FFFFFF;
+	border-color: #8D8E8E;
+	padding: 25px;
+}
+#But:hover{
+	color:#42C1FD;
+	border-color:#42C1FD;
+	transition:ease-out 0.4s;
+}
+#But2{
+	font-size: 25px;
+	border-radius: 15px;
+	background-color:rgba(0,0,0,0.8); 
+	color:#FFFFFF;
+	border-color: #8D8E8E;
+	padding: 25px;
+	margin-top:50px; 
+	text-align: center;
+}
+#But2:hover{
+	color:#42C1FD;
+	border-color:#42C1FD;
+	transition:ease-out 0.4s;
+}
