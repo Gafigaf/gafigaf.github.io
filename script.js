@@ -1,4 +1,3 @@
-
 function count(){
 	var a = parseInt(document.getElementById("first").value);
 	var b = parseInt(document.getElementById("second").value);
@@ -28,7 +27,7 @@ function count(){
 		document.getElementById("x1").innerHTML = "";
 		document.getElementById("x2").innerHTML = "";
 	}
-
+//Diskriminant
 
 }
 function ochist(){
@@ -40,6 +39,9 @@ function ochist(){
 	document.getElementById("erorr").innerHTML = "";
 	document.getElementById("result").innerHTML = "";
 }
+//Ochistka Diskriminant
+
+//Kvadrat sumy
 
 function countt() {
 	hop.style.color = "#FFF";
@@ -50,7 +52,25 @@ function countt() {
 		document.getElementById("hop").innerHTML = "ВВЕДИТЕ ЧИСЛА";
 		hop.style.color = "red";
 	}
+	var chbox;
+	var chbox2;
+	chbox = document.getElementById('check');
+	chbox2 = document.getElementById('check2');
+	if (chbox.checked) {
+		document.getElementById("hop").innerHTML = "(" + a1 +"a"+"+" + b2 +")² = " + a1*a1+ "a²" + "+"+2*a1*b2+"a"+"+"+ b2*b2 ;	
+	}
+
+	if (chbox2.checked) {
+		document.getElementById("hop").innerHTML = "(" + a1 +"+" + b2+"a"+")² = " + a1*a1+ "+"+2*a1*b2+"a"+"+"+ b2*b2+"a²";
+	}
+
+	if (chbox.checked && chbox2.checked) {
+		document.getElementById("hop").innerHTML = "(" + a1 +"a"+"+" + b2+"a"+")² = " + a1*a1+ "a²" + "+"+2*a1*b2+"a²"+"+"+ b2*b2+"a²";
+	}
+
+
 }
+//Ochistka Kvadrat sumy
 
 function ochistt() {
 	document.getElementById("first").value = '';
