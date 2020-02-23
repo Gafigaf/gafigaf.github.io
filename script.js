@@ -81,7 +81,7 @@ function countt() {
 	}
 
 	if (chbox.checked && chbox2.checked) {
-		document.getElementById("hop").innerHTML = "(" + a1 +b4+"+" + b2+b4+")² = " + a1*a1+b3+"²" + "+"+2*a1*b2+b3+"²"+"+"+ b2*b2+b3+"²" +"= "+ parseInt(a1*a1+2*a1*b2+b2*b2)+b3+"²";
+		document.getElementById("hop").innerHTML = "(" + a1 +bukva+"+" + b2+bukva2+")² = " + a1*a1+bukva+"²" + "+"+2*a1*b2+bukva+bukva2+"+"+ b2*b2+bukva2+"²";
 	}
 
 
