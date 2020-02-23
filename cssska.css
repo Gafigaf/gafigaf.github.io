@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Ubuntu');
+@import url('@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');');
+
 *{
 	margin:0;
 	padding:0;
@@ -8,7 +9,7 @@ body{
 	background:url(https://image.freepik.com/free-photo/modern-futuristic-neon-light-background_33739-414.jpg)no-repeat center center ;
 	background-size:cover;
 	background-attachment: fixed; 
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	padding: 5%;
 
 }
@@ -30,12 +31,13 @@ article{
 #first,#second,#thirsd{
 	background-color:rgba(0,0,0,0.6); 
 	color:#FFF;
+	font-family: 'Roboto', sans-serif;
 }
 p{
 	font-size: 35px;
 	padding-top: 20px;
 	margin-top:10px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 #vvod{
@@ -46,6 +48,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-right: 10px;
+	font-family: 'Roboto', sans-serif;
 }
 #next{
 	font-size: 20px;
@@ -62,6 +65,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-top: 50px;
+	font-family: 'Roboto', sans-serif;
 
 }
 #vvod:hover{
@@ -78,6 +82,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-right: 10px;
+	font-family: 'Roboto', sans-serif;
 }
 #ohict:hover{
 	color:#FF695E;
@@ -136,7 +141,7 @@ a:hover{
 }
 .regular-checkbox {
 	-webkit-appearance: none;
-	background-color:rgba(0,0,0,0.8); ;
+	background-color: #000;
 	border: 1px solid #cacece;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 	padding: 9px;
@@ -145,14 +150,14 @@ a:hover{
 	position: relative;
 }
 .regular-checkbox:active, .regular-checkbox:checked:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.1), inset 0px 1px 3px rgba(0,0,0,0.1);
-	border: 1px solid #adb8c0;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-	color: #99a1a7;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
 
 .regular-checkbox:checked {
-	background-color: #FFF;
+	background-color: #000;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
 }
 .regular-checkbox:checked:after {
 	content: '\2714';
@@ -161,4 +166,17 @@ a:hover{
 	top: 0px;
 	left: 3px;
 	color: #FFF;
+}
+
+#buk{
+	text-align: center;
+	background: #000;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+#buk2{
+	text-align: center;
+	background: #000;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
 }
