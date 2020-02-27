@@ -180,3 +180,10 @@ a:hover{
 	color: #FFF;
 	font-family: 'Roboto', sans-serif;
 }
+
+select{
+	font-size: 20px;
+	background-color:rgba(0,0,0,0.8);
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}

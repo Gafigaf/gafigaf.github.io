@@ -47,22 +47,34 @@ function countt() {
 	hop.style.color = "#FFF";
 	var a1 = parseInt(document.getElementById("first").value);
 	var b2 = parseInt(document.getElementById("second").value);
-	document.getElementById("hop").innerHTML = "(" + a1 + "+" + b2 +")² = " + a1*a1 + "+"+2*a1*b2 +"+"+ b2*b2 + "= " + parseInt(a1*a1 + 2 * a1*b2 + b2*b2);
-	if (isNaN(a1,b2)) {
-		swal("Ошибка", "ВВЕДИТЕ ЧИСЛА", "error");
-		document.getElementById("hop").innerHTML = "";
-		hop.style.color = "red";
-	}
+	var n = document.getElementById("SelectMyLove").options.selectedIndex;
+	var ob  = "(" + a1 + "+" + b2 +")² = " + a1*a1 + "+"+2*a1*b2 +"+"+ b2*b2 + "= " + parseInt(a1*a1 + 2 * a1*b2 + b2*b2);
+	var m_ob = "(" + a1 + "-" + b2+")² = " + a1*a1 + ""+ -2*a1*b2 +"+"+ b2*b2 + "=" + parseInt(a1*a1 + -2 * a1*b2 + b2*b2);
 	var chbox;
 	var chbox2;
 	var bukva =(document.getElementById("buk").value);
 	var bukva2 = (document.getElementById("buk2").value);
-	var b3 = bukva +"²"+ bukva2;
-	var b4 = bukva + bukva2;
+	var s_b = "(" + a1 +bukva+"+" + b2 +")² = " + a1*a1+ bukva+"²"+ "+"+2*a1*b2+bukva+"+"+ b2*b2;
+	var s_b2 = "(" + a1 +"+" + b2 +bukva2 +")² = " + a1*a1+"+"+2*a1*b2 + bukva2 +"+"+ b2*b2 + bukva2 + "²";
+	var s_b3 = "(" + a1 +bukva+"+" + b2+bukva2+")² = " + a1*a1+bukva+"²" + "+"+2*a1*b2+bukva+bukva2+"+"+ b2*b2+bukva2+"²";
+	var s_b_min = "(" + a1 +bukva+"-" + b2 +")² = " + a1*a1+ bukva+"²"+ -2*a1*b2+bukva+"+"+ b2*b2;
+	var s_b_min2 = "(" + a1 +"-" + b2 +bukva2 +")² = " + a1*a1+ -2*a1*b2 + bukva2 +"+"+ b2*b2 + bukva2 + "²";
+	var s_b_min3 = "(" + a1 +bukva+"-" + b2+bukva2+")² = " + a1*a1+bukva+"²" + -2*a1*b2+bukva+bukva2+"+"+ b2*b2+bukva2+"²";
 	chbox = document.getElementById('check');
 	chbox2 = document.getElementById('check2');
+
+
+	if (n == 0) {
+		document.getElementById("hop").innerHTML = ob;
+	
+	if (isNaN(a1,b2)) {
+		swal("Ошибка", "Введите числа", "error");
+		document.getElementById("hop").innerHTML = "";
+		hop.style.color = "red";
+	}
+
 	if (chbox.checked) {
-		document.getElementById("hop").innerHTML = "(" + a1 +bukva+"+" + b2 +")² = " + a1*a1+ bukva+"²"+ "+"+2*a1*b2+bukva+"+"+ b2*b2;
+		document.getElementById("hop").innerHTML = s_b;
 		if(isFinite(bukva)){
 			swal("Ошибка", "ВЫ ВВЕЛИ ЦИФРУ", "error");
 			document.getElementById("hop").innerHTML = "";
@@ -71,8 +83,7 @@ function countt() {
 	}
 
 	if (chbox2.checked) {
-		document.getElementById("hop").innerHTML = "(" + a1 +"+" + b2+"a"+")² = " + a1*a1+ "+"+2*a1*b2+"a"+"+"+ b2*b2+"a²";
-		document.getElementById("hop").innerHTML = "(" + a1 +"+" + b2 +bukva2 +")² = " + a1*a1+"+"+2*a1*b2 + bukva2 +"+"+ b2*b2 + bukva2 + "²";
+		document.getElementById("hop").innerHTML = s_b2;
 		if(isFinite(bukva2)){
 			swal("Ошибка", "Вы ввели цифру / Вы ничего не ввели", "error");
 			document.getElementById("hop").innerHTML = "";
@@ -81,9 +92,40 @@ function countt() {
 	}
 
 	if (chbox.checked && chbox2.checked) {
-		document.getElementById("hop").innerHTML = "(" + a1 +bukva+"+" + b2+bukva2+")² = " + a1*a1+bukva+"²" + "+"+2*a1*b2+bukva+bukva2+"+"+ b2*b2+bukva2+"²";
+		document.getElementById("hop").innerHTML = s_b3;
 	}
 
+}
+	if (n == 1) {
+		document.getElementById("hop").innerHTML = m_ob;
+
+	if (isNaN(a1,b2)) {
+		swal("Ошибка", "Введите числа", "error");
+		document.getElementById("hop").innerHTML = "";
+		hop.style.color = "red";
+	}	
+	if (chbox.checked) {
+		document.getElementById("hop").innerHTML = s_b_min;
+		if(isFinite(bukva)){
+			swal("Ошибка", "ВЫ ВВЕЛИ ЦИФРУ", "error");
+			document.getElementById("hop").innerHTML = "";
+			hop.style.color = "red";
+		}
+	}
+	if (chbox2.checked) {
+		document.getElementById("hop").innerHTML = s_b_min2;
+		if(isFinite(bukva2)){
+			swal("Ошибка", "Вы ввели цифру / Вы ничего не ввели", "error");
+			document.getElementById("hop").innerHTML = "";
+			hop.style.color = "red";
+		}
+	}
+	if (chbox.checked && chbox2.checked) {
+		document.getElementById("hop").innerHTML = s_b_min3;
+	}
+
+
+	}
 
 }
 //Ochistka Kvadrat sumy
