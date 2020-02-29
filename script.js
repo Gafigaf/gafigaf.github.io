@@ -1,3 +1,4 @@
+
 function count(){
 	var a = parseInt(document.getElementById("first").value);
 	var b = parseInt(document.getElementById("second").value);
@@ -136,4 +137,22 @@ function ochistt() {
 	document.getElementById("second").value = '';
 	document.getElementById("hop").innerHTML = "";
 	document.getElementById("buk2").value = '';
+	document.getElementById("buk2").value = '';
+	document.getElementById("rrk").innerHTML = "";
+}
+
+function info() {
+	swal("Информация", "Сайт предназначен для подсчета формулы (a±b)²", "info");
+}
+
+function r_k() {
+	var a3 = document.getElementById("r_a").value;
+	var b3 = document.getElementById("r_b").value;
+	document.getElementById("rrk").innerHTML = "("+a3 +"+"+b3 +") *" + " (" + a3 +"-"+b3 +") = "  + parseInt(a3*a3 - b3*b3) +" = "+ a3*a3 +"-"+ b3 * b3 ;
+
+}
+function ochisistit() {
+	document.getElementById("rrk").innerHTML = "";
+	document.getElementById("r_a").value = "";
+	document.getElementById("r_b").value = "";
 }

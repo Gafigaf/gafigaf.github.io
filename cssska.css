@@ -28,7 +28,7 @@ article{
 	padding: 10%;
 	background-color:rgba(0,0,0,0.8); 
 }
-#first,#second,#thirsd{
+input{
 	background-color:rgba(0,0,0,0.6); 
 	color:#FFF;
 	font-family: 'Roboto', sans-serif;
@@ -101,28 +101,32 @@ input{
 	padding:5px;
 }
 a{
-	color:#0059ff;
+	color:#FFF;
 	text-decoration: none;
 }
 a:hover{
-	color:#ff0000;
+	color:#42C1FD;
+	transition: 0.5s;
 }
 #But{
 	font-size: 25px;
-	border-radius: 15px;
+	border-radius: 45px;
 	background-color:rgba(0,0,0,0.8); 
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	padding: 25px;
+
 }
 #But:hover{
 	color:#42C1FD;
 	border-color:#42C1FD;
-	transition:ease-out 0.4s;
+	transition: all 0.5s ease-in-out;
+
+
 }
 #But2{
 	font-size: 25px;
-	border-radius: 15px;
+	border-radius: 45px;
 	background-color:rgba(0,0,0,0.8); 
 	color:#FFFFFF;
 	border-color: #8D8E8E;
