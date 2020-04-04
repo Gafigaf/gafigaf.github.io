@@ -1,207 +1,128 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-*{
-	margin:0;
-	padding:0;
-}
-/*background:url()no-repeat center center ;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Sans+Pro&display=swap');
 body{
-	background-color:#465a7a;
-	background-size:cover;
-	background-attachment: fixed; 
-	font-family: 'Ubuntu', sans-serif;
-	padding: 5%
-}
-article{
-	font-size:1.5vw;
+	background: #3e3e3e;
+	min-height: 100vh;
+	overflow-x: hidden;
 	color:#FFF;
-	line-height: 1.5;
-	margin-bottom:50%; 
-	padding: 10%;
-	background-color:rgba(0,0,0,0.8); 
+	font-family: 'Roboto', sans-serif;
 }
-p,li{
-	margin-bottom: 1em;
+h3{
+	color:#000;
 }
-h1{
-	font-family: 'Ubuntu', sans-serif;
-font-family: 'Poiret One', cursive;
-font-size:10vh;
-color: #fff;
-line-height: 0.8;
-margin: 2em 0 1em;
-text-shadow: 0 0 2vw #000;
-text-align:left;
+.navbar{
+	width: 100%;
+	background: #FFF;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	box-sizing: border-box;
 }
-#imgage{
-	padding-top: 100px;
+.icon{
+	display: none;
+	font-size: 1.2em;
+	cursor: pointer; 
+	color: red;
+	background: red;
 }
-h1 span{
-	font-size:3vw;
-	position: relative;
-	top:1em;
+.links{
+	display: flex;
+	list-style: none;
+}
+.links li{
+	margin-right: 24px;
+}
+.links li a{
+	text-decoration: none;
+	color: #111
+}
+.links li a:hover{
+	color: #000;
+}
+.backgdrop{
+	display: none;
+	animation:0.4s ease-in-out fadeIn forwards;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: #000;
+	cursor: pointer;
+}
+@keyframes fadeIn {
+	to{
+		background: red;
+	}
+}
+.close-btn{
+	position: absolute;
+	top: 24px;
+	right: -90vh;
+	color:#575;
+	font-size: 2em;
+	z-index: 3;
+	transition: 0.3s ease-in-out;
+}
+.close-btn :hover{
+	color: red;
+	cursor: pointer;
+}
+.open .links{
+	right: 0;
+}
+.open .close-btn{
+	right: 32px;
+}
+.open .backgdrop{
 	display: block;
-	color:#fff;
-	text-shadow: none; 
 }
-h2{
-	color: #fff;
-	font-size: 3vw;
-	text-align: center;
-	padding-bottom: 100px;
+a:visited{
+	color: white;
+}
+.warning{
+	width: 100%;
+	background: #D24040;
+	color:#FFF;
+	text-align:center;
+	border-radius: 4px;
+	font-size: 30px;
+	font-family: Google Sans,arial,sans-serif-medium,sans-serif;
+}
+.warning a{
+	color: white;
 }
 a{
 	text-decoration: none;
-	color:#33FF66;
+font-family: 'Source Sans Pro', sans-serif;
 }
 a:hover{
+	text-decoration:underline;
+}
+li a:hover{
+	background:#d3d3d3;
+
+	transition: 0.4s ease-in-out;
+}
+.alert{
 	color: red;
-	transition: all 0.7s;
+}
+.info_corona a{
+	color: red;
 }
 p{
-	margin-top: 10px;
+	font-size: 22px;
+	text-align: justify ;
 }
-
-footer #button{
-	width: 35px;
-	height: 35px;
-	border: 12px solid #33FF66;
-	border-radius: 36px;
-	margin: 0 auto;
-	position: relative;
-	transition: all 1s ease;
-	bottom: 35px;
-}
-footer #button:hover{
-	border: 12px solid red;
-	transition: all 1s ease;
-	position: relative;
-}
-#end{
-	margin-top:100px; 
-}
-footer{
-	width:100vw;
-	height: 2em;
-margin:0;
-padding: 0;
-position: fixed;
-bottom:0;
-left:0;
-background-color:rgba(0,0,0,0.5);
-transition:all 1s ease;
-z-index: 999; 
-}
-footer:hover{
-	transition: all 1s ease;
-height: 10em;
-}
-footer #container{
-	margin-top: 5px;
-	width: 100%;
-	height: 100%;
-	position: relative;
-top:0;
-left:0;
-background-color: rgba(0,0,0,0.1);
-}
-footer #cont{
-	position: relative;
-	top:-45px;
-	right: 190px;
-	width: 150px;
-	height:auto;
-	margin:0 auto;
-}
-.footer_center{
-	width: 500px;
-	float: left;
+.warning2 {
+	color: #FFF;
 	text-align: center;
-	color: white;
-}
-footer h3{
-	font-size:30px;
-	margin-top:70px;
-	margin-left: 40px; 
-}
-.gallery{
-	width: 100%;
-	height:100%;
-}
-body{
- background-image: url("../img/ep_naturalwhite.png");
-}
-header{
- margin-top: 50px;
- font-family: Cuprum, Arial, Helvetica, sans-serif;
-}
-
-.dws-menu *{
- margin: 0;
- padding: 0;
-}
-.dws-menu ul,
-.dws-menu ol{
- list-style: none;
-}
-.dws-menu > ul{
- display: flex;
- justify-content: center;
-}
-.dws-menu > ul li{
- position: relative;
- border-right: 1px solid #ffffff;
-}
-.dws-menu > ul li:first-child{
- border-left: 1px solid #ffffff;
-}
-.dws-menu > ul li:last-child{
- border-right: 1px solid #ffffff;
-}
-.dws-menu > ul li > a i.fa{
- position: absolute;
- top: 15px;
- left: 12px;
- font-size: 18px;
-}
-.dws-menu > ul li a{
- display: block;
- /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
- background:#2F8DCB; /* Old browsers */
- padding: 15px 30px 15px 40px;
- font-size: 14px;
- color:#ffffff;
- text-decoration: none;
- text-transform:uppercase;
- transition: all 0.3s ease;
-}
-.dws-menu li a:hover{
- /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
- background:#354B5F; /* Old browsers */
- color: #ffffff;
- box-shadow: 1px 5px 10px -5px black;
- transition: all 0.3s ease;
-}
-
-/*sub menu*/
-.dws-menu li ul{
- position: absolute;
- min-width: 150px;
- display: none;
-}
-.dws-menu li > ul li{
- border: 1px solid #2F8DCB;
-}
-.dws-menu li > ul li a{
- padding: 10px;
- text-transform: none;
- background: #2F8DCB;
-}
-.dws-menu li > ul li ul{
- position: absolute;
- right: -150px;
- top: 0;
-}
-.dws-menu li:hover > ul{
- display: block;
+	background:#ffae42;
+	display: inline;
+	border-radius: 4px;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
