@@ -1,4 +1,4 @@
-@import url('@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
 	margin:0;
@@ -6,11 +6,13 @@
 }
 /*background:url()no-repeat center center ;*/
 body{
+	/*background:url(https://image.freepik.com/free-photo/modern-futuristic-neon-light-background_33739-414.jpg)no-repeat center center ;*/
 	background-color: #000;
 	background-size:cover;
 	background-attachment: fixed; 
-	font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 	padding: 5%;
+
 }
 h1{
 	font-size: 40px;
@@ -30,16 +32,56 @@ article{
 	border:none;
 	color:#FFF;
 }
+/*article:before{
+	content: "";
+	background:linear-gradient(135deg,#FF0000,#FF6800,#F7FF00,#83FF00,#00FF32,#00FFE8,#0046FF,#FF00FB);
+	position: absolute;
+	top: -2px;left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(20px);
+	width: 102%;height: 102%;
+	animation: 8s linear infinite;
+	border-radius:25px;
+	animation: moving 8s linear infinite;
+
+}
+article:after{
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 25px;
+}
+@keyframes moving{
+	0%{
+		background-position: 0 0;
+		opacity: 0.5;
+	}
+		50%{
+		background-position: 100% 0;
+		opacity: 1;
+	}
+		100%{
+		background-position: 0 0;
+		opacity: 0.5;
+	}
+}
+*/
 input{
 	background-color:rgba(0,0,0,0.6); 
 	color:#FFF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 p{
 	font-size: 35px;
 	padding-top: 20px;
 	margin-top:10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #vvod{
@@ -50,7 +92,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-right: 10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 #next{
 	font-size: 20px;
@@ -67,7 +109,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-top: 50px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 
 }
 #vvod:hover{
@@ -84,7 +126,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-right: 10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 #ohict:hover{
 	color:#FF695E;
@@ -112,33 +154,38 @@ a:hover{
 }
 #But{
 	font-size: 25px;
-	border-radius: 45px;
 	background-color:rgba(0,0,0,0.8); 
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	padding: 25px;
+	border-radius: 20px;
+	font-family: 'Open Sans', sans-serif;
 
 }
 #But:hover{
-	color:#42C1FD;
-	border-color:#42C1FD;
-	transition: all 0.5s ease-in-out;
+	color:#FFF;
+	border-color:#337FED;
+	background-color: #337FED;
+	transition: all 0.15s ease-out 0.15s;
+
 
 
 }
 #But2{
 	font-size: 25px;
-	border-radius: 45px;
+	border-radius: 20px;
 	background-color:rgba(0,0,0,0.8); 
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	padding: 25px;
 	margin-top:50px; 
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
 }
 #But2:hover{
-	color:#42C1FD;
-	border-color:#42C1FD;
+	color:#FFF;
+	border-color:#337FED;
+	background-color: #337FED;
 	transition:ease-out 0.4s;
 }
 #check{
@@ -178,18 +225,18 @@ a:hover{
 	text-align: center;
 	background: #000;
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 #buk2{
 	text-align: center;
 	background: #000;
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 select{
 	font-size: 20px;
 	background-color:rgba(0,0,0,0.8);
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
