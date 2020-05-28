@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
 	margin:0;
@@ -6,11 +6,11 @@
 }
 /*background:url()no-repeat center center ;*/
 body{
-	/*background:url(https://image.freepik.com/free-photo/modern-futuristic-neon-light-background_33739-414.jpg)no-repeat center center ;*/
+	background:url(https://raw.githubusercontent.com/Gafigaf/profile.github.io/d23a1ae2774c0142e7e2c17d7e74df2f35554408/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA-2.svg)no-repeat center center ;
 	background-color: #000;
 	background-size:cover;
 	background-attachment: fixed; 
-font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 	padding: 5%;
 
 }
@@ -27,7 +27,7 @@ article{
 	padding: 10%;
 	outline: none;
 	position: relative; z-index: 0;
-	border-radius: 25px;
+	border-radius: 15px;
 	background: #111;
 	border:none;
 	color:#FFF;
@@ -70,18 +70,18 @@ article:after{
 		background-position: 0 0;
 		opacity: 0.5;
 	}
-}
-*/
+}*/
+
 input{
 	background-color:rgba(0,0,0,0.6); 
 	color:#FFF;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 p{
 	font-size: 35px;
 	padding-top: 20px;
 	margin-top:10px;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
 #vvod{
@@ -92,7 +92,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-right: 10px;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 #next{
 	font-size: 20px;
@@ -109,7 +109,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-top: 50px;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 
 }
 #vvod:hover{
@@ -126,7 +126,7 @@ p{
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	margin-right: 10px;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 #ohict:hover{
 	color:#FF695E;
@@ -153,39 +153,39 @@ a:hover{
 	transition: 0.5s;
 }
 #But{
-	font-size: 25px;
+	font-size: 20px;
 	background-color:rgba(0,0,0,0.8); 
 	color:#FFFFFF;
 	border-color: #8D8E8E;
-	padding: 25px;
+	padding: 15px;
 	border-radius: 20px;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 
 }
 #But:hover{
 	color:#FFF;
-	border-color:#337FED;
-	background-color: #337FED;
+	border-color:#6a10c6;
+	background-color: #7511c0;
 	transition: all 0.15s ease-out 0.15s;
 
 
 
 }
 #But2{
-	font-size: 25px;
-	border-radius: 20px;
+	font-size: 20px;
+	border-radius: 100px;
 	background-color:rgba(0,0,0,0.8); 
 	color:#FFFFFF;
 	border-color: #8D8E8E;
 	padding: 25px;
 	margin-top:50px; 
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 #But2:hover{
 	color:#FFF;
-	border-color:#337FED;
-	background-color: #337FED;
+	border-color:#6a10c6;
+	background-color: #6a10c6;
 	transition:ease-out 0.4s;
 }
 #check{
@@ -225,18 +225,18 @@ a:hover{
 	text-align: center;
 	background: #000;
 	color: #FFF;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 #buk2{
 	text-align: center;
 	background: #000;
 	color: #FFF;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
 select{
 	font-size: 20px;
 	background-color:rgba(0,0,0,0.8);
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
