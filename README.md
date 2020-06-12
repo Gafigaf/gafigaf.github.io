@@ -13,7 +13,7 @@
 <hr 6px>
   <h1>Cпасибо</h1>
 </a>
-<footer>&copy; ANISINOV 2020</footer>
+<footer>&copy; anisimov 2020</footer>
 </body>
 </html>
 </html>
