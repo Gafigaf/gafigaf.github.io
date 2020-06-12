@@ -44,7 +44,6 @@ article{
 	animation: 8s linear infinite;
 	border-radius:25px;
 	animation: moving 8s linear infinite;
-
 }
 article:after{
 	z-index: -1;
@@ -146,7 +145,6 @@ input{
 }
 a{
 	color:#FFF;
-	text-decoration: none;
 }
 a:hover{
 	color:#42C1FD;
