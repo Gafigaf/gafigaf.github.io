@@ -1,4 +1,5 @@
 
+
 function count(){
 	var a = parseInt(document.getElementById("first").value);
 	var b = parseInt(document.getElementById("second").value);
@@ -8,25 +9,29 @@ function count(){
 	var kor_d = Math.sqrt(D);
 	var x1 = (-b + kor_d)/(2*a);
 	var x2 = (-b - kor_d)/(2*a);
+	var reshx1 = -b +" + "+kor_d + " ÷ " + 2*a +" = " + ((-b+kor_d)/2);
+	var reshx2 = -b +" - "+ kor_d + " ÷ " + 2*a + " = " + ((-b-kor_d)/2);
 
 
 
 	document.getElementById("result").innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c+" = "+ D;
 	if (D < 0) {
-		document.getElementById("erorr").innerHTML = "Корней нету";
+		document.getElementById("erorr").innerHTML = "Корней нету (ツ)";
 
 	}else{
 		document.getElementById("erorr").innerHTML = "";
 	}
 	document.getElementById("x1").innerHTML = "x1 = " + x1;
+	document.getElementById("x1").innerHTML = "x1 = " + reshx1;
 
 	document.getElementById("x2").innerHTML = "x2 = " + x2;
+	document.getElementById("x2").innerHTML = "x2 = " + reshx2;
 
 	if (isNaN(D)) {
-		document.getElementById("erorr").innerHTML = "ВВЕДИТЕ ЧИСЛА ";
+		document.getElementById("erorr").innerHTML = "❌ ВВЕДИТЕ ЧИСЛА ";
 		document.getElementById("result").innerHTML = "";
-		document.getElementById("x1").innerHTML = "";
-		document.getElementById("x2").innerHTML = "";
+		document.getElementById("x1").innerHTML = " ";
+		document.getElementById("x2").innerHTML = " ";
 	}
 //Diskriminant
 
@@ -63,7 +68,6 @@ function countt() {
 	var s_b_min3 = "(" + a1 +bukva+"-" + b2+bukva2+")² = " + a1*a1+bukva+"²" + -2*a1*b2+bukva+bukva2+"+"+ b2*b2+bukva2+"²";
 	chbox = document.getElementById('check');
 	chbox2 = document.getElementById('check2');
-
 
 	if (n == 0) {
 		document.getElementById("hop").innerHTML = ob;
@@ -149,6 +153,7 @@ function r_k() {
 	var a3 = document.getElementById("r_a").value;
 	var b3 = document.getElementById("r_b").value;
 	document.getElementById("rrk").innerHTML = "("+a3 +"+"+b3 +") *" + " (" + a3 +"-"+b3 +") = "  + parseInt(a3*a3 - b3*b3) +" = "+ a3*a3 +"-"+ b3 * b3 ;
+	document.getElementById("rrk").replace(/[^a-z]/g, '');
 
 }
 function ochisistit() {
