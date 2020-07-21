@@ -36,7 +36,7 @@
 
 <h2>Changelog:</h2>
 
-<div id="add"><b>20.07.2020</b></div>
+<div id="add"><b style="color:red">20.07.2020</b></div>
 <p>Добавлена возможность увидеть как находить х1 и х2</p>
 
 <hr 6px>
