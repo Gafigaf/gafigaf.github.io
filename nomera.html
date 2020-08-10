@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="cssska.css">
+<script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+
+	function count() {
+		var nomer = document.getElementById("inpt_n").value;
+	if (nomer == "аа" || nomer == "АА" || nomer =="Аа") {
+		document.getElementById("result").innerHTML = "Киев";
+	}
+	if (nomer == "ам" || nomer == "АМ" || nomer =="Ам") {
+		document.getElementById("result").innerHTML = "Житомир/Область";
+	}
+	if (nomer == "св" || nomer == "СВ" || nomer =="Св") {
+		document.getElementById("result").innerHTML = "Чернигов/Область";
+	}
+	if (nomer == "вм" || nomer == "ВМ" || nomer =="Вм") {
+		document.getElementById("result").innerHTML = "Сумы/Область";
+	}
+
+	if (nomer == "аі" || nomer == "АІ" || nomer =="Аі") {
+		document.getElementById("result").innerHTML = "Киевская область";
+	}
+	if (nomer == "ае" || nomer == "АЕ" || nomer =="Ае") {
+		document.getElementById("result").innerHTML = "Днепр/Область";
+	}
+	if (nomer == "ар" || nomer == "АР" || nomer =="Ар") {
+		document.getElementById("result").innerHTML = "Запор/Область";
+	}
+	if (nomer == "вт" || nomer == "ВТ" || nomer =="Вт") {
+		document.getElementById("result").innerHTML = "Херсон/Область";
+	}
+	if (nomer == "ак" || nomer == "АК" || nomer =="Ак") {
+		document.getElementById("result").innerHTML = "Крым";
+	}
+	if (nomer == "сн" || nomer == "СН" || nomer =="Сн") {
+		document.getElementById("result").innerHTML = "Севастополь";
+	}
+	if (nomer == "вн" || nomer == "ВН" || nomer =="Вн") {
+		document.getElementById("result").innerHTML = "Одесса/Область";
+	}
+	if (nomer == "вв" || nomer == "ВВ" || nomer =="Вв") {
+		document.getElementById("result").innerHTML = "Луганск/Область";
+	}
+	if (nomer == "ан" || nomer == "АН" || nomer =="Ан") {
+		document.getElementById("result").innerHTML = "Донецк/Область";
+	}
+	if (nomer == "ве" || nomer == "ВЕ" || nomer =="Ве") {
+		document.getElementById("result").innerHTML = "Николаев/Область";
+	}
+	if (nomer == "се" || nomer == "СЕ" || nomer =="Се") {
+		document.getElementById("result").innerHTML = "Чернивецкая/Область";
+	}
+	if (nomer == "ао" || nomer == "Ао" || nomer =="АО") {
+		document.getElementById("result").innerHTML = "Закарпатье/Область";
+	}
+	if (nomer == "вс" || nomer == "ВС" || nomer =="Вс") {
+		document.getElementById("result").innerHTML = "Львов/Область";
+	}
+	if (nomer == "ас" || nomer == "АС" || nomer =="Ас") {
+		document.getElementById("result").innerHTML = "Волинь/Область";
+	}
+	if (nomer == "ві" || nomer == "ВІ" || nomer =="Ві") {
+		document.getElementById("result").innerHTML = "Полтава/Область";
+	}
+	if (nomer == "ва" || nomer == "ВА" || nomer =="Ва") {
+		document.getElementById("result").innerHTML = "Кировоград/Область";
+	}
+	if (nomer == "ав" || nomer == "АВ" || nomer =="Ав") {
+		document.getElementById("result").innerHTML = "Винница/Область";
+	}
+	if (nomer == "вх" || nomer == "ВХ" || nomer =="Вх") {
+		document.getElementById("result").innerHTML = "Хмельниций/Область";
+	}
+	if (nomer == "ат" || nomer == "АТ" || nomer =="Ат") {
+		document.getElementById("result").innerHTML = "Ивано-Франковск/Область";
+	}
+	if (nomer == "вк" || nomer == "ВК" || nomer =="Вк") {
+		document.getElementById("result").innerHTML = "Ровно/Область";
+	}
+	if (nomer == "во" || nomer == "ВО" || nomer =="Во") {
+		document.getElementById("result").innerHTML = "Тернополь/Область";
+	}
+	if (nomer == "ах" || nomer == "АХ" || nomer =="Ах") {
+		document.getElementById("result").innerHTML = "Харьков/Область";
+	}
+	}
+
+</script>
+	<meta charset="utf-8s">
+	<title>Коды номеров 🇺🇦</title>
+</head>
+<body>
+<article>
+	<h1>Коды номеров автомобилей в Украине </h1>
+	<input type="" id="inpt_n" placeholder="введите номер"><br><br><br>
+	<input type="button" value=" Узнать " onclick="count()" id="check">
+	<p id="result">33</p>
+</article>
+</body>
+</html>
