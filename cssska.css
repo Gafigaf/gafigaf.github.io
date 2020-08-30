@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
 	margin:0;
@@ -6,19 +7,22 @@
 }
 /*background:url()no-repeat center center ;*/
 body{
-	background:url(https://raw.githubusercontent.com/Gafigaf/profile.github.io/d23a1ae2774c0142e7e2c17d7e74df2f35554408/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA-2.svg)no-repeat center center ;
-	background-color: #000;
+	/*background:url(https://raw.githubusercontent.com/Gafigaf/profile.github.io/d23a1ae2774c0142e7e2c17d7e74df2f35554408/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA-2.svg)no-repeat center center ;*/
 	background-size:cover;
-	background-attachment: fixed; 
+
+background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+background-attachment: fixed; 
 font-family: 'Montserrat', sans-serif;
 	padding: 5%;
 
 }
 h1{
-	font-size: 40px;
-text-shadow: 0 0 2vw #000;
+	font-size: 35px;
+	color: #34373B;
+/*text-shadow: 0 0 2vw #000;*/
 text-align:left;
 margin: 0.1em 0 1em;
+font-family: 'Montserrat', sans-serif;
 
 }
 article{
@@ -28,9 +32,16 @@ article{
 	outline: none;
 	position: relative; z-index: 0;
 	border-radius: 15px;
-	background: #111;
+	background:#fff;
 	border:none;
-	color:#FFF;
+	color:#000;
+}
+#hop{
+	font-size: 30px;
+	padding-top: 20px;
+	margin-top:10px;
+font-family: 'Montserrat', sans-serif;
+color: red;
 }
 /*article:before{
 	content: "";
@@ -72,76 +83,18 @@ article:after{
 }*/
 
 input{
-	background-color:rgba(0,0,0,0.6); 
-	color:#FFF;
-font-family: 'Montserrat', sans-serif;
 }
 p{
-	font-size: 35px;
+	font-size: 30px;
 	padding-top: 20px;
 	margin-top:10px;
 font-family: 'Montserrat', sans-serif;
 }
 
-#vvod{
-	font-size: 20px;
-	border-radius: 45px;
-	padding:8px;
-	background-color:rgba(0,0,0,0.8); 
-	color:#FFFFFF;
-	border-color: #8D8E8E;
-	margin-right: 10px;
-font-family: 'Montserrat', sans-serif;
-}
-#next{
-	font-size: 20px;
-	border-radius: 45px;
-	padding:8px;
-	background-color:rgba(0,0,0,0.8); 
-	color:#FFFFFF;
-	border-color: #8D8E8E;
-	margin-right: 10px;
-	font-size: 20px;
-	border-radius: 45px;
-	padding:8px;
-	background-color:rgba(0,0,0,0.8); 
-	color:#FFFFFF;
-	border-color: #8D8E8E;
-	margin-top: 50px;
-font-family: 'Montserrat', sans-serif;
-
-}
-#vvod:hover{
-	color:#42C1FD;
-	border-color:#42C1FD;
-	transition:ease-out 0.4s;
-
-}
-#ohict{
-	font-size: 20px;
-	border-radius: 45px;
-	padding:8px;
-	background-color:rgba(0,0,0,0.8); 
-	color:#FFFFFF;
-	border-color: #8D8E8E;
-	margin-right: 10px;
-font-family: 'Montserrat', sans-serif;
-}
-#ohict:hover{
-	color:#FF695E;
-	border-color:#FF695E;
-	transition:0.4s ease;
-
-}
 h4{
 	color: #797c82;
-	margin-bottom: 50px;
-}
-input{
-	margin-top:5px;
-	font-size: 20px; 
-	border-radius: 15px;
-	padding:5px;
+	margin-bottom: 25px;
+	font-family: 'Roboto', sans-serif;
 }
 a{
 	color:#FFF;
@@ -150,50 +103,65 @@ a:hover{
 	color:#42C1FD;
 	transition: 0.5s;
 }
-#But{
-	font-size: 20px;
-	background-color:rgba(0,0,0,0.8); 
-	color:#FFFFFF;
-	border-color: #8D8E8E;
-	padding: 15px;
-	border-radius: 20px;
-font-family: 'Montserrat', sans-serif;
 
-}
-#But:hover{
-	color:#FFF;
-	border-color:#6a10c6;
-	background-color: #7511c0;
-	transition: all 0.15s ease-out 0.15s;
-
-
-
-}
-#But2{
-	font-size: 20px;
-	border-radius: 100px;
-	background-color:rgba(0,0,0,0.8); 
-	color:#FFFFFF;
-	border-color: #8D8E8E;
-	padding: 25px;
-	margin-top:50px; 
-	text-align: center;
-font-family: 'Montserrat', sans-serif;
-}
-#But2:hover{
-	color:#FFF;
-	border-color:#6a10c6;
-	background-color: #6a10c6;
-	transition:ease-out 0.4s;
-}
 #check{
   cursor: pointer;
   font-size: 22px;
 }
+/*фиелды | fields*/
+.input_value{
+	background:#FFF;
+	font-size: 20px;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	padding: 5px;
+	border-radius: 3px;
+	width: 170px;
+}
+.input_value:focus{
+	border:2px solid #FFF;
+	color: #0058E9;
+}
+
+
+
+/*кнопки | Buttons */
+
+#vvod{
+	background: #FFF;
+	border:2px solid #333333;
+	color: #000;
+	font-size: 20px;
+	padding: 15px;
+	margin-right: 10px;
+	border-radius: 3px; 
+	font-family: 'Montserrat', sans-serif;
+}
+#ohict{
+	background: #FFF;
+	border:2px solid #D54948;
+	color: #000;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 3px; 
+	font-family: 'Montserrat', sans-serif;
+}
+#ohict:hover{
+	background: #D54948;
+	color: #fff;
+	transition: ease-in-out all 0.5s;
+}
+#vvod:hover{
+	background: #333333;
+	color: #FFF;
+	transition: ease-in-out all 0.5s;
+}
+
+/*Чек - боксы | Checkbox */
 .regular-checkbox {
 	-webkit-appearance: none;
-	background-color: #000;
-	border: 1px solid #cacece;
+	background-color: #FFF;
+	border: 0.5px solid #cacece;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 	padding: 9px;
 	border-radius: 3px;
@@ -217,24 +185,4 @@ font-family: 'Montserrat', sans-serif;
 	top: 0px;
 	left: 3px;
 	color: #FFF;
-}
-
-#buk{
-	text-align: center;
-	background: #000;
-	color: #FFF;
-font-family: 'Montserrat', sans-serif;
-}
-#buk2{
-	text-align: center;
-	background: #000;
-	color: #FFF;
-font-family: 'Montserrat', sans-serif;
-}
-
-select{
-	font-size: 20px;
-	background-color:rgba(0,0,0,0.8);
-	color: #fff;
-font-family: 'Montserrat', sans-serif;
 }
