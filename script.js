@@ -1,5 +1,3 @@
-
-
 function count(){
 	var a = parseInt(document.getElementById("first").value);
 	var b = parseInt(document.getElementById("second").value);
@@ -11,6 +9,13 @@ function count(){
 	var x2 = (-b - kor_d)/(2*a);
 	var reshx1 = -b +" + "+kor_d + " ÷ " + 2*a +" = " + ((-b+kor_d)/2);
 	var reshx2 = -b +" - "+ kor_d + " ÷ " + 2*a + " = " + ((-b-kor_d)/2);
+	var letters = /^[a-zA-Zа-яА-ЯёЁ]+$/;
+
+	
+	// alert(reshx1);
+	// alert(reshx2);
+	//todo choto ia spat :)
+	
 
 
 
@@ -33,9 +38,18 @@ function count(){
 		document.getElementById("x1").innerHTML = " ";
 		document.getElementById("x2").innerHTML = " ";
 	}
+	if (isNaN(a)) {
+		document.getElementById("erorr").innerHTML = "❌ Введите А ";
+	}
+	if (isNaN(b)) {
+		document.getElementById("erorr").innerHTML = "❌ Введите B ";
+	}
+	if (isNaN(c)) {
+		document.getElementById("erorr").innerHTML = "❌ Введите все числа ";
+	}
 //Diskriminant
-
 }
+
 function ochist(){
 	document.getElementById("first").value = '';
 	document.getElementById("thirsd").value = '';
@@ -45,12 +59,13 @@ function ochist(){
 	document.getElementById("erorr").innerHTML = "";
 	document.getElementById("result").innerHTML = "";
 }
+
 //Ochistka Diskriminant
 
 //Kvadrat sumy
 
 function countt() {
-	hop.style.color = "#FFF";
+	hop.style.color = "#000";
 	var a1 = parseInt(document.getElementById("first").value);
 	var b2 = parseInt(document.getElementById("second").value);
 	var n = document.getElementById("SelectMyLove").options.selectedIndex;
@@ -145,6 +160,7 @@ function ochistt() {
 	document.getElementById("rrk").innerHTML = "";
 }
 
+
 function info() {
 	swal("Информация", "Сайт предназначен для подсчета формулы (a±b)²", "info");
 }
@@ -160,4 +176,12 @@ function ochisistit() {
 	document.getElementById("rrk").innerHTML = "";
 	document.getElementById("r_a").value = "";
 	document.getElementById("r_b").value = "";
+}
+
+function seefull() {
+	var choto;
+	choto = document.getElementById("chb_a");
+	if (choto.checked) {
+		alert("3")
+	}
 }
