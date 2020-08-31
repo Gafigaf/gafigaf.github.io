@@ -22,7 +22,7 @@
 
   <h1>Cпасибо</h1>
 </a>
-<footer>&copy; anisimov 2020</footer>
+<footer>&copy; Anisimov 2020</footer>
 </body>
 </html>
 </html>
