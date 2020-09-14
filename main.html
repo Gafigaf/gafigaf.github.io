@@ -1,19 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<link rel="stylesheet" href="cssska.css">
-<script src="script.js"></script>
-	<meta charset="utf-8s">
-    <title>Главная </title>
+<link rel="stylesheet" href="new_css.css">
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anisimov •	main</title>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Gafigaf/Images/master/logo4.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
-<article>
-<H1>Главная</H1>
-<h4>made by:Anisimov Sergii,2020<br>Выберете одну из страниц,в скорейшем времени будут обновления</h4>
-<a href="https://gafigaf.github.io/Diskriminat.html"><button id="But">Калькулятор квадратного уравения (D=b²-4*a*c)</button></a><br>
-<a href="https://gafigaf.github.io/kvadrat.html"><button id="But2">Калькулятор квадрата сумы</button></a><br>
-<a href="https://gafigaf.github.io/r_k.html"><button id="But2">Разница квадратов</button></a>
-</article>
+<header>
+    <nav class="container">
+      <a class="logo">
+
+      </a>
+      <img src="https://raw.githubusercontent.com/Gafigaf/Images/2a84072ff357e20b189f0425dafb9d7d84aafbd2/3AN.svg" width="30px" height="20px">
+      <div class="nav-toggle"><span></span></div>
+      <ul id="menu">
+        <div id="dark"><li onclick="myFunction()">Темная тема</li>
+        <li><a href="">Портфолио</a></li>
+        <li><a href="">Об авторе</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+<div class="container">
+  <div class="posts-list">
+    <article id="post-1" class="post">
+      <div class="post-image"><a href=""><img src="file:///C:/Users/user/Desktop/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5.jpg"></a></div>
+      <div class="post-content">
+        <div class="category">Програмирование •	java • js</div>
+        <h2 class="post-title">Математика</h2>
+        <p>1,5 годичный проект на java и на js</p>
+        <div class="post-footer">
+          <a class="more-link" href="https://gafigaf.github.io/Diskriminat.html">Узнать больше →</a>
+        </div>
+      </div>
+    </article>
+        <article id="post-1" class="post">
+      <div class="post-image"><a href=""><img src="https://html5book.ru/wp-content/uploads/2016/05/rasskaz_slovar_rodnoy_prirodi.jpg"></a></div>
+      <div class="post-content">
+        <div class="category">Дизайн</div>
+        <h2 class="post-title">Весна</h2>
+        <p>Очень богат русский язык словами, относящимися к временам года и к природным явлениям, с ними связанным.</p>
+        <div class="post-footer">
+          <a class="more-link" href="">Продолжить чтение</a>
+        </div>
+
+      </div>
+    </article>
+    <a class="button-7" href=""><span>Читать далее ></span></a>
+    <article id="post-2" class="post">
+      ...
+    </article>
+  </div> <!-- конец div class="posts-list"-->
+</div> <!-- конец div class="container"-->
+<footer>
+  <div class="container">
+    <div class="footer-col"><span>Anisimov Sergii © 2020</span></div>
+    <div class="footer-col">
+      <div class="social-bar-wrap">
+        <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
 </body>
 </html>
