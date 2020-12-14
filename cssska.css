@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 *{
 	margin:0;
@@ -10,8 +11,8 @@ body{
 	/*background:url(https://raw.githubusercontent.com/Gafigaf/profile.github.io/d23a1ae2774c0142e7e2c17d7e74df2f35554408/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA-2.svg)no-repeat center center ;*/
 	background-size:cover;
 
-background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
-background-attachment: fixed; 
+background: linear-gradient(125deg, #00FF57 0%, #010033 40%, #460043 70%, #F0FFC5 100%), linear-gradient(55deg, #0014C9 0%, #410060 100%), linear-gradient(300deg, #FFC700 0%, #001AFF 100%), radial-gradient(135% 215% at 115% 40%, #393939 0%, #393939 40%, #849561 calc(40% + 1px), #849561 60%, #EED690 calc(60% + 1px), #EED690 80%, #ECEFD8 calc(80% + 1px), #ECEFD8 100%), linear-gradient(125deg, #282D4F 0%, #282D4F 40%, #23103A calc(40% + 1px), #23103A 70%, #A0204C calc(70% + 1px), #A0204C 88%, #FF6C00 calc(88% + 1px), #FF6C00 100%);
+background-blend-mode: overlay, screen, overlay, overlay, normal;
 font-family: 'Montserrat', sans-serif;
 	padding: 5%;
 
@@ -23,6 +24,7 @@ h1{
 text-align:left;
 margin: 0.1em 0 1em;
 font-family: 'Montserrat', sans-serif;
+letter-spacing: 1px;
 
 }
 article{
@@ -85,9 +87,7 @@ article:after{
 input{
 }
 p{
-	font-size: 30px;
-	padding-top: 20px;
-	margin-top:10px;
+	font-size: 20px;
 font-family: 'Montserrat', sans-serif;
 }
 
@@ -97,10 +97,11 @@ h4{
 	font-family: 'Roboto', sans-serif;
 }
 a{
-	color:#FFF;
+	text-decoration: none;
+	color:#000;
 }
 a:hover{
-	color:#42C1FD;
+	color:#0525BE;
 	transition: 0.5s;
 }
 
@@ -185,4 +186,20 @@ a:hover{
 	top: 0px;
 	left: 3px;
 	color: #FFF;
+}
+#math1{
+	background: red;
+	display: block;
+	 padding: 10px 20px 25px;
+}
+.btn {
+  position: relative;
+  padding: 10px 20px 25px;
+  width: 25%;
+  background: #111;
+  font-family: lato;
+  cursor: pointer;
+}
+.But2{
+	color: red;
 }
