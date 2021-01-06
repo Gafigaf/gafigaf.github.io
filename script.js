@@ -96,9 +96,13 @@ function countt() {
 	if (chbox.checked) {
 		document.getElementById("hop").innerHTML = s_b;
 		if(isFinite(bukva)){
-			swal("Ошибка", "ВЫ ВВЕЛИ ЦИФРУ", "error");
+			swal("Ошибка", "Вы ввели цифру", "error");
 			document.getElementById("hop").innerHTML = "";
 			hop.style.color = "red";
+		}
+		if (bukva.length == 2) {
+			swal("Ошибка", "Вы ввели более чем одну букву в одну строчку", "error");
+			document.getElementById("hop").innerHTML = "";
 		}
 	}
 
@@ -108,6 +112,10 @@ function countt() {
 			swal("Ошибка", "Вы ввели цифру / Вы ничего не ввели", "error");
 			document.getElementById("hop").innerHTML = "";
 			hop.style.color = "red";
+		}
+			if (bukva2.length == 2) {
+			swal("Ошибка", "Вы ввели более чем одну букву в одну строчку", "error");
+			document.getElementById("hop").innerHTML = "";
 		}
 	}
 
@@ -127,9 +135,10 @@ function countt() {
 	if (chbox.checked) {
 		document.getElementById("hop").innerHTML = s_b_min;
 		if(isFinite(bukva)){
-			swal("Ошибка", "ВЫ ВВЕЛИ ЦИФРУ", "error");
+			swal("Ошибка", "Вы введи цифру", "error");
 			document.getElementById("hop").innerHTML = "";
 			hop.style.color = "red";
+
 		}
 	}
 	if (chbox2.checked) {
@@ -139,6 +148,7 @@ function countt() {
 			document.getElementById("hop").innerHTML = "";
 			hop.style.color = "red";
 		}
+
 	}
 	if (chbox.checked && chbox2.checked) {
 		document.getElementById("hop").innerHTML = s_b_min3;
