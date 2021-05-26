@@ -25,7 +25,7 @@
 
   <h1>Cпасибо</h1>
 </a>
-<footer>&copy; Anisimov 2020 - 2021</footer>
+<footer>&copy; Anisimov Sergii 2020 - 2021</footer>
 </body>
 </html>
 </html>
