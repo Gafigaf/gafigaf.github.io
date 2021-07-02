@@ -60,7 +60,8 @@
 	}
 	.container .card .box .content{
 		padding: 20px;
-		text-align: center;
+        text-align: center;
+        
 	}
 	.container .card .box .content h2{
 		position: absolute;
@@ -96,13 +97,16 @@
 		margin-top: 15px;
 		border-radius: 15px;
 		color: #fff;
-		text-decoration: none;
+        text-decoration: none;
+        transition: all 0.5s;
 	}
 
 	.container .card .box .content a:hover{
 		background: #1a68eb;
-		transition: 0.5s;
-	}
+		transition: all 0.5s;
+    }
+    
+    /*      footer css style         */
 
 	footer{
 		display: flex;
@@ -111,7 +115,16 @@
 		color: #fff;
 		background:#4289ff;
 		border-radius: 15px;
-	}
+    }
+    footer a{
+        color: #fff;
+        transition: all 0.5s;
+    }
+    footer a:hover{
+        color: #f1f0f0;
+        transform: skewX(-15deg);
+        transition: 0.5s ease;
+    }
 	.footer > *{
 		flex: 1 100%;
 	}
@@ -159,7 +172,8 @@
 	}
 	.cosial img{
 		width: 104px;
-		height: 100px;
+        height: 100px;
+        transition: all 0.5s;
 	}
 	.cosial{
 		margin-right: 500px;
@@ -240,7 +254,7 @@
 
 <footer class="footer">
 	<div class="footer-left">
-		<p><b>Главная страница</b></p>
+		<p><b>Главная страница</b>  •  <a href="#">Темная тема</a></p>
 		<br>
 		<p>Тут собраны почти все мои готовые и не очень проекты,многие из них,такие как "Дискриминант" и "Коды регионов" были так же написаны на Java и JavaFX,ознакомиться с ними можно на гитхабе,ссылка ниже,там же можно посмотреть мои проекты на codepen. А так же связаться со мной.</p>
 		<div class="cosial">
