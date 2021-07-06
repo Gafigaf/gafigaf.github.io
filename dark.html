@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная / Main</title>
+	<link rel="shortcut icon" href="https://raw.githubusercontent.com/Gafigaf/Images/master/logoanwhite.png" type="image/png">
+</head>
+<body>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif;
+	}
+	*,*:before,*:after{
+		box-sizing: border-box;
+	}
+
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		margin: 0;
+        background-color: #161616;
+
+	}
+	.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 1200px;
+		flex-wrap: wrap;
+		padding: 40px 0;
+	}
+	.container .card{
+		position: relative;
+		width: 320px;
+		height: 440px;
+		border-radius: 15px;
+		margin: 30px;
+		box-shadow: 4px 4px 8px 0px rgba(163, 163, 163, 0);
+		background:#181818;
+	}
+	.container .card:hover{
+		transition: 0.5s;
+	}
+	.container .card .box{
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		display: flex;
+		justify-content: center;
+/*		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); может да или нет */
+		align-items: center;
+	}
+	.container .card .box .content{
+		padding: 20px;
+        text-align: center;
+        
+	}
+	.container .card .box .content h2{
+		position: absolute;
+		top: -10px;
+		right: 30px;
+		font-size: 10em;
+		color: rgba(255, 255, 255, 0.02);
+		transition: 0.5s;
+	}
+	.container .card:hover .box .content h2{
+		color: rgba(255, 255, 255, 0.04);
+	}
+
+	.container .card .box .content h3{
+		font-size: 2em;
+		color: #ffffff;
+		z-index: 1;
+		transition: 0.5s;
+	}
+
+	.container .card .box .content p{
+		font-size: 0.9em;
+		color: #777;
+		z-index: 1;
+		transition: 0.5s;
+	}
+
+	.container .card .box .content a{
+		position: relative;
+		display: inline-block;
+		padding:8px 20px;
+		background: #4289ff;
+		margin-top: 15px;
+		border-radius: 15px;
+		color: #fff;
+        text-decoration: none;
+        transition: all 0.5s;
+	}
+
+	.container .card .box .content a:hover{
+		background: #1a68eb;
+		transition: all 0.5s;
+    }
+    
+    /*      footer css style         */
+
+	footer{
+		display: flex;
+		flex-flow: row wrap;
+		padding: 50px;
+		color: #fff;
+		background:#4289ff;
+		border-radius: 15px;
+    }
+    footer a{
+        color: #fff;
+        transition: all 0.5s;
+    }
+    footer a:hover{
+        color: #f1f0f0;
+        transform: translateX(10px);
+        transition: 0.5s ease;
+    }
+	.footer > *{
+		flex: 1 100%;
+	}
+	.footer-letf{
+		margin-right: 1.25em;
+		margin-bottom: 2em;
+	}
+	.footer h2{
+		font-weight: 600px;
+		font-size: 20px;
+	}
+
+	.footer ul{
+		list-style: none;
+		padding-left: 0;
+	}
+	.footer li{
+		line-height: 2em;
+	}
+	.footer a{
+		text-decoration: none;
+	}
+	.footer-right{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.footer-right > * {
+		flex: 1 50%;
+		margin-right: 1.25em;
+	}
+	.footer-right .fbox a{
+		color: #ffffff;
+	}
+	.footer-bottom{
+		text-align: center;
+		color:#fff;
+		padding-top: 50px;
+	}
+	.footer-left p{
+		display: flex;
+		flex-flow: row wrap;
+		padding-right: 20%;
+		color: #fff;
+		font-size: 18px;
+	}
+	.cosial img{
+		width: 104px;
+        height: 100px;
+        transition: all 0.5s;
+	}
+	.cosial{
+		margin-right: 500px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.cosial img:hover{
+		transform: translateY(-20px);
+		transition: 0.5s ease;
+	}
+
+
+</style>
+<div class="container">
+
+	<div class="card">
+		<div class="box">
+			<div class="content">
+				<h2>01</h2>
+				<h3>Дискриминант</h3>
+				<p>Предназначен для вычисления дискриминанта по формуле : D=b²-4*a*c</p>
+				<a href="https://gafigaf.github.io/Diskriminat.html">Узнать больше ►</a>
+			</div>
+		</div>
+	</div>
+
+		<div class="card">
+		<div class="box">
+			<div class="content">
+				<h2>02</h2>
+				<h3>Квадрат сумы</h3>
+				<p>Предназначен для вычисления квадрата сумы по формуле: (a±b)²</p>
+				<a href="https://gafigaf.github.io/kvadrat.html">Узнать больше ►</a>
+			</div>
+		</div>
+	</div>
+
+		<div class="card">
+		<div class="box">
+			<div class="content">
+				<h2>03</h2>
+				<h3>Разница квадратов</h3>
+				<p>Предназначен для вычисления разницы квадратов по формуле: (a-b)(a+b) = a²+b²</p>
+				<a href="https://gafigaf.github.io/r_k.html">Узнать больше ►</a>
+			</div>
+		</div>
+	</div>
+		<div class="card">
+		<div class="box">
+			<div class="content">
+				<h2>04</h2>
+				<h3>Генератор паролей</h3>
+				<p>Предназначен для генерации паролей,длина задается Вами.</p>
+				<a href="https://gafigaf.github.io/password_generator.html">Узнать больше ►</a>
+			</div>
+		</div>
+	</div>
+		<div class="card">
+		<div class="box">
+			<div class="content">
+				<h2>05</h2>
+				<h3>Очистка текста</h3>
+				<p>Предназначен для очистки текста от гиперсылок и стилей.</p>
+				<a href="https://gafigaf.github.io/utilities/cleaner.html">Узнать больше ►</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="box">
+			<div class="content">
+				<h2>06</h2>
+				<h3>Коды регионов</h3>
+				<p>Предназначен для вычисления кода региона Украины в в соответствии с первыми буквами в номере.</p>
+				<a href="https://gafigaf.github.io/nomera">Узнать больше ►</a>
+			</div>
+		</div>
+	</div>
+
+<footer class="footer">
+	<div class="footer-left">
+		<p><b>Главная страница</b>  •  <a href="#">Темная тема ►</a></p>
+		<br>
+		<p>Тут собраны почти все мои готовые и не очень проекты,многие из них,такие как "Дискриминант" и "Коды регионов" были так же написаны на Java и JavaFX,ознакомиться с ними можно на гитхабе,ссылка ниже,там же можно посмотреть мои проекты на codepen. А так же связаться со мной.</p>
+		<div class="cosial">
+			<a href="https://github.com/Gafigaf"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px" alt="Мой гитхаб"></a>
+			<a href="https://codepen.io/sergii-annisimov"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" alt="Мой codepen "></a>
+			<a href="mailto:anisimovsergii@gmail.com"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" alt="Моя почта"></a>
+		<!-- 	<a href="#"><img src=""></a> -->
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>&copy Anisimov Sergii,2021</p>
+	</div>
+</footer>
+</div>
+</body>
+</html>
