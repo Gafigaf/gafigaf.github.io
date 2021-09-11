@@ -11,15 +11,17 @@ body{
 	/*background:url(https://raw.githubusercontent.com/Gafigaf/profile.github.io/d23a1ae2774c0142e7e2c17d7e74df2f35554408/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA-2.svg)no-repeat center center ;*/
 	background-size:cover;
 
-background: linear-gradient(125deg, #00FF57 0%, #010033 40%, #460043 70%, #F0FFC5 100%), linear-gradient(55deg, #0014C9 0%, #410060 100%), linear-gradient(300deg, #FFC700 0%, #001AFF 100%), radial-gradient(135% 215% at 115% 40%, #393939 0%, #393939 40%, #849561 calc(40% + 1px), #849561 60%, #EED690 calc(60% + 1px), #EED690 80%, #ECEFD8 calc(80% + 1px), #ECEFD8 100%), linear-gradient(125deg, #282D4F 0%, #282D4F 40%, #23103A calc(40% + 1px), #23103A 70%, #A0204C calc(70% + 1px), #A0204C 88%, #FF6C00 calc(88% + 1px), #FF6C00 100%);
-background-blend-mode: overlay, screen, overlay, overlay, normal;
+/* background: linear-gradient(125deg, #00FF57 0%, #010033 40%, #460043 70%, #F0FFC5 100%), linear-gradient(55deg, #0014C9 0%, #410060 100%), linear-gradient(300deg, #FFC700 0%, #001AFF 100%), radial-gradient(135% 215% at 115% 40%, #393939 0%, #393939 40%, #849561 calc(40% + 1px), #849561 60%, #EED690 calc(60% + 1px), #EED690 80%, #ECEFD8 calc(80% + 1px), #ECEFD8 100%), linear-gradient(125deg, #282D4F 0%, #282D4F 40%, #23103A calc(40% + 1px), #23103A 70%, #A0204C calc(70% + 1px), #A0204C 88%, #FF6C00 calc(88% + 1px), #FF6C00 100%); */
+
+/* background-blend-mode: overlay, screen, overlay, overlay, normal; */
+background: #F7FAFF;
 font-family: 'Montserrat', sans-serif;
 	padding: 5%;
 
 }
 h1{
 	font-size: 35px;
-	color: #34373B;
+	color: #000000;
 /*text-shadow: 0 0 2vw #000;*/
 text-align:left;
 margin: 0.1em 0 1em;
@@ -46,8 +48,6 @@ font-family: 'Montserrat', sans-serif;
 color: red;
 }
 
-input{
-}
 p{
 	font-size: 20px;
 font-family: 'Montserrat', sans-serif;
@@ -83,7 +83,7 @@ a:hover{
 }
 .input_value:focus{
 	border:2px solid #FFF;
-	color: #0058E9;
+	color: #1b232f;
 }
 
 
@@ -91,27 +91,27 @@ a:hover{
 /*кнопки | Buttons */
 
 #vvod{
-	background: #FFF;
-	border:2px solid #333333;
-	color: #000;
-	font-size: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
 	padding: 15px;
-	margin-right: 10px;
-	border-radius: 3px; 
+	font-size: 20px;
+	text-decoration: none;
+	transition: all 0.5s;
 	font-family: 'Montserrat', sans-serif;
 }
 #ohict{
-	background: #FFF;
-	border:2px solid #D54948;
-	color: #000;
+	background: #e64d4d;
+	color:#fff;
 	font-size: 20px;
+	border-radius: 5px;
 	padding: 15px;
-	border-radius: 3px; 
+	transition: all 0.5s;
 	font-family: 'Montserrat', sans-serif;
 }
 #ohict:hover{
-	background: #D54948;
-	color: #fff;
+	background: #b13b3b;
+	color: rgb(255, 255, 255);
 	transition: ease-in-out all 0.5s;
 }
 #vvod:hover{
@@ -127,7 +127,7 @@ a:hover{
 	border: 0.5px solid #cacece;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 	padding: 9px;
-	border-radius: 3px;
+	border-radius: 5px;
 	display: inline-block;
 	position: relative;
 }
@@ -149,10 +149,23 @@ a:hover{
 	left: 3px;
 	color: #FFF;
 }
+select{
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 5px;
+}
 #math1{
 	background: red;
 	display: block;
 	padding: 10px 20px 25px;
+}
+#block{
+margin-top: 20px;
+}
+#block p{
+	font-size: 25px;
 }
 .btn {
   position: relative;
@@ -171,9 +184,9 @@ a:hover{
 	font-size: 20px;
 	color: #000;
 	font-family: 'Montserrat', sans-serif;
-	padding: 5px;
-	border-radius: 3px;
-	width: 50px;
+	padding: 7px;
+	border-radius: 5px;
+	width: 35px;
 	text-align: center;
 }
 #buk2{
@@ -182,8 +195,8 @@ a:hover{
 	color: #000;
 	font-family: 'Montserrat', sans-serif;
 	padding: 5px;
-	border-radius: 3px;
-	width: 50px;
+	border-radius: 5px;
+	width: 35px;
 	text-align: center;
 }
 .SelectMyLove{
