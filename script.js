@@ -21,7 +21,7 @@ function count(){
 
 	document.getElementById("result").innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c+" = "+ D;
 	if (D < 0) {
-		document.getElementById("erorr").innerHTML = "Корней нету (ツ)";
+		document.getElementById("erorr").innerHTML = "Корней нету";
 
 	}else{
 		document.getElementById("erorr").innerHTML = "";
