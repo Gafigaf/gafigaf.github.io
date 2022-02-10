@@ -108,70 +108,52 @@
 		font-family: 'Montserrat', sans-serif;
 	}
 	body{
-		background: #DFE3E6;
-	}
-	.container{
-		width: 100%;
-		min-height: 8%;
-		padding-right: 8%;
-		padding-left: 8%;
-		box-sizing: border-box;
-		overflow: hidden;
-		/*padding-top: 8%;*/
-		background: white;
-		/*margin-top: 8%;*/
-	line-height: 1.5;
-	margin-bottom:50%; 
-	padding: 10%;
-	outline: none;
-	position: relative; z-index: 0;
-	border-radius: 15px;
-	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-
+		background: #2D2F46;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 15%;
+		color:#FDFDFD;
 	}
 	p{
 		font-size: 25px;
 	}
 	button{
-	font-size:18px;
-	padding:  10px 10px 10px 10px;
-	background: #FFF;
-	border:2px solid #333333;
-	color: #000;
-	border-radius: 4px; 
-	margin-right: 5px;
+		transition: ease-in-out 0.2s;
 	}
 	#clear{
-		border:2px solid #D54948;
+	font-size:18px;
+	background-color: #2D2F46;
+	padding:  10px 10px 10px 10px;
+	border-radius: 4px; 
+	margin-right: 5px;
+	color: #FDFDFD;
+	border: solid #3BBA9C;
+	
 	}
-	button:hover{
-	background: #333333;
-	color: #FFF;
-	transition: ease-in-out all 0.5s;
-}
-#clear:hover{
-	background: #D54948;
-}
+	#clear:hover{
+		background-color: #3BBA9C;
+		transition: ease-in-out 0.2s;
+	}
 input{
 	font-size:20px;
 	padding:  3px 3px 3px 3px;
-	background: #FFF;
-	border:2px solid #333333;
-	color: #000;
+	background: #2D2F46;
+	border:none;
+	color: #FDFDFD;
 	border-radius: 4px; 
 	margin-right: 5px;
 }
 #result{
 	font-size:30px;
 	font-weight:bold;
+	color:#3BBA9C;
 }
 
 </style>
 <div class="container">
-	<h1>Коды регионов Украины</h1><br>
+	<h1>Коды регионов Украины на автомобильных номерах</h1><br>
 	<p>Введите код ниже</p><br>
-	<input id="inpt_n" placeholder="Например : Аа,ав" type="text" name=""><br><br>
-	<button onclick="check()">Ввести</button>
+	<input id="inpt_n" placeholder="Например : Аа,ав" type="text" name="" oninput="check()" autofocus="true"><br><br>
 	<button onclick="clear1() "id="clear">Очистить</button><br><br>
 	<p id="result"></p><br>
 </div>
