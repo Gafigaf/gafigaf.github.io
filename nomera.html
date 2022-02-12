@@ -108,7 +108,7 @@
 		font-family: 'Montserrat', sans-serif;
 	}
 	body{
-		background: #2D2F46;
+		background: #202833;
 		text-align: center;
 		vertical-align: middle;
 		padding-top: 15%;
@@ -116,46 +116,48 @@
 	}
 	p{
 		font-size: 25px;
+		color:#4d5175;
 	}
 	button{
 		transition: ease-in-out 0.2s;
 	}
 	#clear{
 	font-size:18px;
-	background-color: #2D2F46;
+	background-color: #202833;
 	padding:  10px 10px 10px 10px;
 	border-radius: 4px; 
 	margin-right: 5px;
 	color: #FDFDFD;
-	border: solid #3BBA9C;
+	border: solid #5AE4DB;
 	
 	}
 	#clear:hover{
-		background-color: #3BBA9C;
-		transition: ease-in-out 0.2s;
+		background-color: #5AE4DB;
+		transition: ease-in-out 0.3s;
 	}
 input{
 	font-size:20px;
 	padding:  3px 3px 3px 3px;
-	background: #2D2F46;
+	background: #202833;
 	border:none;
 	color: #FDFDFD;
 	border-radius: 4px; 
 	margin-right: 5px;
+	text-align: center;
 }
 #result{
 	font-size:30px;
 	font-weight:bold;
-	color:#3BBA9C;
+	color:#5ae4db;
 }
 
 </style>
 <div class="container">
-	<h1>Коды регионов Украины на автомобильных номерах</h1><br>
-	<p>Введите код ниже</p><br>
-	<input id="inpt_n" placeholder="Например : Аа,ав" type="text" name="" oninput="check()" autofocus="true"><br><br>
+	<h1>Коды регионов Украины <br>на автомобильных номерах</h1><br><br>
+	<input id="inpt_n" placeholder="'Аа ,ав'" type="text" name="" oninput="check()" autofocus="true"><br><br><br>
 	<button onclick="clear1() "id="clear">Очистить</button><br><br>
-	<p id="result"></p><br>
+	<p id="result"></p><br><br>
+
 </div>
 </body>
 </html>
