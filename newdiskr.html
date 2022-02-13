@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function count(){
+            var s = document.getElementById("eq_input").value;
+            var ed = s.match(/[^" "]+/g, '');
+            var a = parseFloat(ed[0]);
+            var b = parseFloat(ed[1]);
+            var c = parseFloat(ed[2]);
+
+            var b_k = b*b;
+            var diskr =  b_k - 4 * a * c;
+
+            var x1r = (-b + (Math.sqrt(diskr))) / (2*a)
+            var x2r = (-b - (Math.sqrt(diskr))) / (2*a)
+            equation.innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c + " = " +diskr;
+            // result.innerHTML ="D = " + diskr;
+            x1.innerHTML = "-"+ b +" + "+"√"+diskr + "<br>x1 = ⠀―――――⠀ = " +Math.round(x1r*100)/100 + "<br>"+"2/"+a;
+            x2.innerHTML = "-"+ b +" - "+"√"+diskr + "<br>x2 = ⠀―――――⠀ = " +Math.round(x2r*100)/100 + "<br>"+"2/"+a;
+
+            if (isNaN(diskr)){
+                result.hidden = true;
+            } else{
+                result.hidden = false;
+            }
+            if(isNaN(x1r,x2r)){
+                x1.hidden = true;
+                x2.hidden = true;
+            } else{
+                x1.hidden = false;
+                x2.hidden = false;
+            }
+
+            if(isNaN(x2r) || diskr == 0){
+                x2.hidden = true;
+            } else x2.hidden = false;
+
+            if (diskr < 0){
+                err.innerHTML = "D < 0";
+                err.hidden = false;
+            } else {
+                err.hidden = true;
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body{
+    background: #fefefe;
+    text-align: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    color:#081F63;
+}
+input{ 
+    font-size: 25px;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
+#err{
+    color:red;
+}
+h2{
+    margin-top: 5%;
+}
+
+
+</style>
+
+<h2>D= b² - 4 * a * c </h2>
+<input placeholder="a _ b _ c" id="eq_input" type="text" oninput="count()"></input><br><br>
+<p id = equation></p>
+<p id = result></p>
+<p id = err></p>
+<p id = "x1"></p><p id = "x2"></p>
+
+
+
+</body>
+</html>
