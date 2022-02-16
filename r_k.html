@@ -5,18 +5,36 @@
 <link rel="stylesheet" href="cssska.css">
 <script src="script.js"></script>
 	<meta charset="utf-8s">
-    <title>Разница квадратов</title>
+    <title>Разность квадратов</title>
 	<link rel="shortcut icon" href="https://raw.githubusercontent.com/Gafigaf/Images/master/logo4.png" type="image/png">
+
+    <script>
+        function r_k(){
+            var s = r_a.value;
+            var ed = s.match(/[^" ","+","_"]+/g, '');
+            var a = parseFloat(ed[0]);
+            var b = parseFloat(ed[1]);
+            var res = (a*a) - (b*b);
+            if (isNaN(res)){
+                rrk.hidden = true;
+            } else rrk.hidden = false;
+            rrk.innerHTML= a + "²-" + b +"²="+ "("+a+"-"+b+")" + "("+a+"+"+b+")" +"=" + a*a +" - " + b*b + " = " + res;
+        }
+
+        function clr_rk(){
+            rrk.innerHTML = " ";
+            r_a.value = " ";
+        }
+    </script>
+
 </head>
 <body>
 <article>
-<H1>Разница квадратов</H1>
-<h4>made by:Anisimov Sergii,2020<br>(a-b)(a+b) = a²+b²</h4>
-<input type="" id="r_a" class="input_value" placeholder="введите a"><br><br>
-<input type="" id="r_b" class="input_value"  placeholder="введите b"><br><br>
-<button onclick="r_k()" id="vvod">Посчитать</button><button onclick="ochisistit()" id="ohict" >Очистить</button>
-<p id="rrk"></p>
-
+<H1>Разность квадратов</H1>
+<h4>made by: Anisimov Sergii, 2020 - 2022<br>a²-b² = (a-b)(a+b)</h4>
+<input type="" id="r_a" class="input_value" placeholder="a _ b" oninput="r_k()" autofocus="true"><br><br>
+<p id="rrk"></p><br>
+<button type="button" id="clr_rk" onclick="clr_rk()">Очистить</button>
 </article>
 </body>
 </html>
