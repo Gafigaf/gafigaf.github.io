@@ -18,7 +18,7 @@
 
             var x1r = (-b + (Math.sqrt(diskr))) / (2*a)
             var x2r = (-b - (Math.sqrt(diskr))) / (2*a)
-            equation.innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c + " = " +diskr;
+            equation.innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c + " = " +diskr +"<br>"+"√D = " + Math.sqrt(diskr);
             // result.innerHTML ="D = " + diskr;
             x1.innerHTML = "-"+ b +" + "+"√"+diskr + "<br>x1 = ⠀―――――⠀ = " +Math.round(x1r*100)/100 + "<br>"+"2/"+a;
             x2.innerHTML = "-"+ b +" - "+"√"+diskr + "<br>x2 = ⠀―――――⠀ = " +Math.round(x2r*100)/100 + "<br>"+"2/"+a;
@@ -47,18 +47,20 @@
                 err.hidden = true;
             }
         }
+        function show(){
+            alert("Enter 3 numbers separated by a space( _ )")
+        }
     </script>
-
 
 </head>
 <body>
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     background: #fefefe;
     text-align: center;
     align-items: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color:#081F63;
 }
 input{ 
@@ -66,7 +68,7 @@ input{
     text-align: center;
 }
 p{
-    font-size: 25px;
+    font-size: 22px;
 }
 #err{
     color:red;
@@ -74,7 +76,14 @@ p{
 h2{
     margin-top: 5%;
 }
-
+footer{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding-top: 5px;
+    z-index:100;
+    text-align: left;
+}
 
 </style>
 
@@ -84,8 +93,7 @@ h2{
 <p id = result></p>
 <p id = err></p>
 <p id = "x1"></p><p id = "x2"></p>
-
-
+<footer><img src="https://raw.githubusercontent.com/Gafigaf/Images/13fc81a48dfff060f94d34cb774df873bb542a37/216643_help_icon.svg"/ width="22px" height="22px" onclick="show()"> </footer>
 
 </body>
 </html>
