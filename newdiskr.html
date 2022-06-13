@@ -50,6 +50,13 @@
         function show(){
             alert("Enter 3 numbers separated by a space( _ )")
         }
+        function cleatt(){
+            eq_input.value = '';
+            err.innerHTML = " ";
+            equation.innerHTML = " ";
+            x1.innerHTML = " ";
+            x2.innerHTML = " ";
+        }
     </script>
 
 </head>
@@ -57,21 +64,24 @@
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
-    background: #fefefe;
+    background: #FFFFFF;
     text-align: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    color:#081F63;
+    color:#30475E;
 }
 input{ 
     font-size: 25px;
     text-align: center;
+    background: #FFFFFF;
+    color:#30475E;
+    
 }
 p{
     font-size: 22px;
 }
 #err{
-    color:red;
+    color:#F05454;
 }
 h2{
     margin-top: 5%;
@@ -85,13 +95,28 @@ footer{
     text-align: left;
 }
 
+#cleartxt{
+    background: #EFEFEF;
+    color: #30475E;
+    border: none;
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+#cleartxt:hover{
+    background: #F05454;
+    color: #FFF;
+}
+
 </style>
 
 <h2>D= b² - 4 * a * c </h2>
-<input placeholder="a _ b _ c" id="eq_input" type="text" oninput="count()"></input><br><br>
-<p id = equation></p>
-<p id = result></p>
-<p id = err></p>
+<input placeholder="a _ b _ c" id="eq_input" type="text" oninput="count()" autofocus="true"></input><br><br>
+<button id = "cleartxt" onclick="cleatt()">Clear</button>
+<p id = "equation"></p>
+<p id = "result"></p>
+<p id = "err"></p>
 <p id = "x1"></p><p id = "x2"></p>
 <footer><img src="https://raw.githubusercontent.com/Gafigaf/Images/13fc81a48dfff060f94d34cb774df873bb542a37/216643_help_icon.svg"/ width="22px" height="22px" onclick="show()"> </footer>
 
