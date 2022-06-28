@@ -34,6 +34,16 @@
 		flex-wrap: wrap;
 		padding: 40px 0;
 	}
+	.container .contain_block{
+		width: 100vw;
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+	}
+	.container .contain_block p{
+		width: 50%;
+    transform: translateX(50%)
+	}
 	.container .card{
 		position: relative;
 		width: 320px;
@@ -94,6 +104,7 @@
 		display: inline-block;
 		padding:8px 20px;
 		background: #4289ff;
+		border: 1px solid #4289ff ;
 		margin-top: 15px;
 		border-radius: 15px;
 		color: #fff;
@@ -102,7 +113,9 @@
 	}
 
 	.container .card .box .content a:hover{
-		background: #1a68eb;
+		background: none;
+		border: 1px solid #1a68eb ;
+		color: #1a68eb;
 		transition: all 0.5s;
     }
     
@@ -113,7 +126,7 @@
 		flex-flow: row wrap;
 		padding: 50px;
 		color: #fff;
-		background:#4289ff;
+		background-image: linear-gradient(315deg, #77affd 0%, #4289FF 74%);;
 		border-radius: 15px;
     }
     footer a{
@@ -184,7 +197,37 @@
 		transform: translateY(-20px);
 		transition: 0.5s ease;
 	}
-
+	.aboutme{
+		background: #1a68eb;
+		color: #ffffff;
+		text-align: center;
+		width: 100%;
+		padding-top: 15%;
+		padding-bottom: 15%;
+		border-radius: 15px;
+	}
+	.images_info {
+		padding-top: 55px;
+		padding-bottom: 55px;
+		
+	}
+	.images_info img{
+		transition: all 0.5s;
+		margin-right: 7px; 
+		
+	}
+	.images_info img:hover{
+		transform: translateY(-20px);
+		filter: drop-shadow(10px 6px 10px rgba(0, 0, 0, 0.36));
+	}
+	/* .contain_block{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 100vw;
+		flex-wrap: wrap;
+		padding: 40px 0;
+	} */
 
 </style>
 <div class="container">
@@ -252,7 +295,22 @@
 		</div>
 	</div>
 
-<footer class="footer">
+	<div class="contain_block">
+		<div class="aboutme">
+			<h2>Мої контакти:</h2>
+			<div class="images_info">
+			<a href="https://github.com/Gafigaf"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px" alt="Мой гитхаб"></a>
+			<a href="https://codepen.io/sergii-annisimov"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" width="104px" height="100px" alt="Мой codepen "></a>
+			<a href="mailto:anisimovsergii@gmail.com"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" width="104px" height="100px" alt="Моя почта" ></a>
+		</div>
+			<p>&copy Anisimov Sergii, 2020 - 2022 </p>
+		</div>
+		</div>
+	</div>
+
+
+
+<!-- <footer class="footer">
 	<div class="footer-left">
 		<p><b>Головна сторінка</b>  •  <a href="https://gafigaf.github.io/dark.html">Темна тема ►</a></p>
 		<br>
@@ -261,15 +319,15 @@
 			<a href="https://github.com/Gafigaf"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px" alt="Мой гитхаб"></a>
 			<a href="https://codepen.io/sergii-annisimov"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" alt="Мой codepen "></a>
 			<a href="mailto:anisimovsergii@gmail.com"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" alt="Моя почта"></a>
-		<!-- 	<a href="#"><img src=""></a> -->
 		</div>
 	</div>
 	<div class="footer-bottom">
 		<p>&copy Anisimov Sergii, 2020 - 2022 </p><br><br>
 		<img src="https://raw.githubusercontent.com/Gafigaf/Images/c11b7b1c86b52c111596bb2fc94158e3018ebf7f/norus.svg" width="100" height="100" title="#stoprussia" >
 	</div>
-</footer>
+</footer> -->
 </div>
+
 
 </body>
 </html>
