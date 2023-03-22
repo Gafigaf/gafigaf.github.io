@@ -1,334 +1,173 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title> Main </title>
-	<link rel="shortcut icon" href="https://raw.githubusercontent.com/Gafigaf/Images/master/logoanwhite.png" type="image/png">
-</head>
-<body>
-<style type="text/css">
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: 'Montserrat', sans-serif;
-		
-	}
-	*,*:before,*:after{
-		box-sizing: border-box;
-	}
+  <head>
+    <title>Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
 
-	body{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-	}
-	.container{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		max-width: 1200px;
-		flex-wrap: wrap;
-		padding: 40px 0;
-	}
-	.container .contain_block{
-		width: 100vw;
-		margin-top: 50px;
-		margin-bottom: 50px;
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+        * {
+  box-sizing: border-box;
+}
 
-	}
-	.container .contain_block p{
-		width: 50%;
-    transform: translateX(50%)
-	}
-	.container .card{
-		position: relative;
-		width: 320px;
-		height: 440px;
-		border-radius: 15px;
-		margin: 30px;
-		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.1);
-		background:#f7faff;
-	}
-	.container .card:hover{
-		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-		transition: 0.5s;
-	}
-	.container .card .box{
-		position: absolute;
-		top: 20px;
-		left: 20px;
-		right: 20px;
-		bottom: 20px;
-		display: flex;
-		justify-content: center;
-/*		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); может да или нет */
-		align-items: center;
-	}
-	.container .card .box .content{
-		padding: 20px;
-        text-align: center;
-        
-	}
-	.container .card .box .content h2{
-		position: absolute;
-		top: -10px;
-		right: 30px;
-		font-size: 10em;
-		color: rgba(0,0,0,0.02);
-		transition: 0.5s;
-	}
-	.container .card:hover .box .content h2{
-		color: rgba(0,0,0,0.04);
-	}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-	.container .card .box .content h3{
-		font-size: 2em;
-		color: #454545;
-		z-index: 1;
-		transition: 0.5s;
-	}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
 
-	.container .card .box .content p{
-		font-size: 0.9em;
-		color: #777;
-		z-index: 1;
-		transition: 0.5s;
-	}
+.block {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 10px 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 1px solid #1A68EB;
+  text-align: center;
+  transition: all .5s;
+}
 
-	.container .card .box .content a{
-		position: relative;
-		display: inline-block;
-		padding:8px 20px;
-		background: #4289ff;
-		border: 1px solid #4289ff ;
-		margin-top: 15px;
-		border-radius: 15px;
-		color: #fff;
-        text-decoration: none;
-        transition: all 0.5s;
-	}
+.infor{
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  border: 1px solid #1A68EB;
+  text-align: center;
+  transition: ease .5s;
+  text-align: center;
+  background: #1A68EB;
+  color: #f1f1f1;
 
-	.container .card .box .content a:hover{
-		background: none;
-		border: 1px solid #1a68eb ;
-		color: #1a68eb;
-		transition: all 0.5s;
-    }
-    
-    /*      footer css style         */
+}
+.infor:hover{
+  box-shadow: 0px 0px 44px 29px rgba(0,0,0,0.08);
+}
+.infor img{
+  transition: ease .5s;
+}
+.infor img:hover{
+  transform: translateY(-20px);
+  filter: drop-shadow(10px 6px 10px rgba(0, 0, 0, 0.08));
+}
 
-	footer{
-		display: flex;
-		flex-flow: row wrap;
-		padding: 50px;
-		color: #fff;
-		background-image: linear-gradient(315deg, #77affd 0%, #4289FF 74%);;
-		border-radius: 15px;
-    }
-    footer a{
-        color: #fff;
-        transition: all 0.5s;
-    }
-    footer a:hover{
-        color: #f1f0f0;
-        transform: translateX(10px);
-        transition: 0.5s ease;
-    }
-	.footer > *{
-		flex: 1 100%;
-	}
-	.footer-letf{
-		margin-right: 1.25em;
-		margin-bottom: 2em;
-	}
-	.footer h2{
-		font-weight: 600px;
-		font-size: 20px;
-	}
+.block:hover{
+    box-shadow: 0px 0px 44px 29px rgba(0,0,0,0.08);
+}
 
-	.footer ul{
-		list-style: none;
-		padding-left: 0;
-	}
-	.footer li{
-		line-height: 2em;
-	}
-	.footer a{
-		text-decoration: none;
-	}
-	.footer-right{
-		display: flex;
-		flex-flow: row wrap;
-	}
-	.footer-right > * {
-		flex: 1 50%;
-		margin-right: 1.25em;
-	}
-	.footer-right .fbox a{
-		color: #ffffff;
-	}
-	.footer-bottom{
-		text-align: center;
-		color:#fff;
-		padding-top: 50px;
-	}
-	.footer-left p{
-		display: flex;
-		flex-flow: row wrap;
-		padding-right: 20%;
-		color: #fff;
-		font-size: 18px;
-	}
-	.cosial img{
-		width: 104px;
-        height: 100px;
-        transition: all 0.5s;
-	}
-	.cosial{
-		margin-right: 500px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	.cosial img:hover{
-		transform: translateY(-20px);
-		transition: 0.5s ease;
-	}
-	.aboutme{
-		background: #1a68eb;
-		color: #ffffff;
-		text-align: center;
-		width: 100%;
-		padding-top: 15%;
-		padding-bottom: 15%;
-		border-radius: 15px;
-	}
-	.images_info {
-		padding-top: 55px;
-		padding-bottom: 55px;
-		
-	}
-	.images_info img{
-		transition: all 0.5s;
-		margin-right: 7px; 
-		
-	}
-	.images_info img:hover{
-		transform: translateY(-20px);
-		filter: drop-shadow(10px 6px 10px rgba(0, 0, 0, 0.36));
-	}
-	/* .contain_block{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		max-width: 100vw;
-		flex-wrap: wrap;
-		padding: 40px 0;
-	} */
+.block a{
+    padding: 8px 20px;
+    background: #1A68EB;
+    border: 1px solid #1A68EB;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: all .3s;
+}
 
-</style>
-<div class="container">
+.block a:hover{
+    padding: 8px 20px;
+    border: 1px solid #1A68EB;
+    margin-top: 15px;
+    border-radius: 15px;
+    background: #fff;
+    color: #1A68EB;
+    text-decoration: none;
+}
 
-	<div class="card">
-		<div class="box">
-			<div class="content">
-				<h2>01</h2>
-				<h3>Дискримінант</h3>
-				<p>Призначений для обчислення дискримінанта за формулою: D=b²-4*a*c</p>
-				<a href="https://gafigaf.github.io/newdiskr.html">Дізнатися більше ►</a>
-			</div>
-		</div>
-	</div>
+.block img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
 
-		<div class="card">
-		<div class="box">
-			<div class="content">
-				<h2>02</h2>
-				<h3>Квадрат суми </h3>
-				<p>Призначений для обчислення квадрата суми за формулою: (a±b)²</p>
-				<a href="https://gafigaf.github.io/kvadrat.html">Дізнатися більше ►</a>
-			</div>
-		</div>
-	</div>
+@media only screen and (min-width: 768px) {
+  .block {
+    width: calc(33.33% - 20px);
+  }
+  
+  .block:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  
+  .block:nth-child(3n) {
+    margin-right: 0;
+  }
+}
 
-		<div class="card">
-		<div class="box">
-			<div class="content">
-				<h2>03</h2>
-				<h3>Різниця квадратів</h3>
-				<p>Призначений для обчислення різниці квадратів за формулою: (a-b)(a+b) = a²+b²</p>
-				<a href="https://gafigaf.github.io/r_k.html">Дізнатися більше ►</a>
-			</div>
-		</div>
-	</div>
-		<div class="card">
-		<div class="box">
-			<div class="content">
-				<h2>04</h2>
-				<h3>Генератор паролів</h3>
-				<p>Призначений для генерації паролів, довжина задається Вами.</p>
-				<a href="https://gafigaf.github.io/password_generator.html">Дізнатися більше ►</a>
-			</div>
-		</div>
-	</div>
-		<div class="card">
-		<div class="box">
-			<div class="content">
-				<h2>05</h2>
-				<h3>Очищення тексту</h3>
-				<p>Призначений для очищення тексту від гіперпосилань та стилів.</p>
-				<a href="https://gafigaf.github.io/utilities/cleaner.html">Дізнатися більше ►</a>
-			</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="box">
-			<div class="content">
-				<h2>06</h2>
-				<h3>Коди регіонів</h3>
-				<p>Призначений для визначення коду регіону України відповідно до перших літер у номері.</p>
-				<a href="https://gafigaf.github.io/nomera">Дізнатися більше ►</a>
-			</div>
-		</div>
-	</div>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+          
+        <div class="block">
+          <h2>Дискримінант</h2>
+          <p>Призначений для обчислення дискримінанта за формулою: D=b²-4*a*c</p><br>
+          <a href="https://gafigaf.github.io/newdiskr.html" target="_blank">Більше ►</a>
+        </div>
 
-	<div class="contain_block">
-		<div class="aboutme">
-			<h2>Мої контакти:</h2>
-			<div class="images_info">
-			<a href="https://github.com/Gafigaf"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px" alt="Мой гитхаб"></a>
-			<a href="https://codepen.io/sergii-annisimov"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" width="104px" height="100px" alt="Мой codepen "></a>
-			<a href="mailto:anisimovsergii@gmail.com"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" width="104px" height="100px" alt="Моя почта" ></a>
-		</div>
-			<p>&copy Anisimov Sergii, 2020 - 2022 </p>
-		</div>
-		</div>
-	</div>
+        <div class="block">
+            <h2>Квадрат суми</h2>
+            <p>Призначений для обчислення квадрата суми за формулою: (a±b)²</p><br>
+            <a href="https://gafigaf.github.io/kvadrat.html" target="_blank">Більше ►</a>
+          </div>
 
+          <div class="block">
+            <h2>Різниця квадратів</h2>
+            <p>Призначений для обчислення різниці квадратів за формулою: (a-b)(a+b) = a²+b²</p><br>
+            <a href="https://gafigaf.github.io/r_k.html" target="_blank">Більше ►</a>
+          </div>
 
+          <div class="block">
+            <h2>Генератор паролів</h2>
+            <p>Призначений для генерації паролів, довжина задається Вами.</p><br>
+            <a href="https://gafigaf.github.io/password_generator.html" target="_blank">Більше ►</a>
+          </div>
+  
+          <div class="block">
+              <h2>Очищення тексту</h2>
+              <p>Призначений для очищення тексту від гіперпосилань та стилів.</p><br>
+              <a href="https://gafigaf.github.io/utilities/cleaner.html" target="_blank">Більше ►</a>
+            </div>
+  
+            <div class="block">
+              <h2>Коди регіонів</h2>
+              <p>Призначений для визначення коду регіону України відповідно до перших літер у номері.</p><br>
+              <a href="https://gafigaf.github.io/nomera" target="_blank">Більше ►</a>
+            </div>
 
-<!-- <footer class="footer">
-	<div class="footer-left">
-		<p><b>Головна сторінка</b>  •  <a href="https://gafigaf.github.io/dark.html">Темна тема ►</a></p>
-		<br>
-		<p></p>
-		<div class="cosial">
-			<a href="https://github.com/Gafigaf"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px" alt="Мой гитхаб"></a>
-			<a href="https://codepen.io/sergii-annisimov"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" alt="Мой codepen "></a>
-			<a href="mailto:anisimovsergii@gmail.com"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" alt="Моя почта"></a>
-		</div>
-	</div>
-	<div class="footer-bottom">
-		<p>&copy Anisimov Sergii, 2020 - 2022 </p><br><br>
-		<img src="https://raw.githubusercontent.com/Gafigaf/Images/c11b7b1c86b52c111596bb2fc94158e3018ebf7f/norus.svg" width="100" height="100" title="#stoprussia" >
-	</div>
-</footer> -->
-</div>
+      </div>
+    </div>
 
+    <div class="infor">
+        <h2>Мої контакти:</h2>
+        <p>© Anisimov Sergii, 2020 - 2023</p>
+        <br>
+        <p><a href="https://github.com/Gafigaf" target="_blank"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px"></a>
 
-</body>
+          <a href="https://codepen.io/sergii-annisimov" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" width="104px" height="100px"></a>
+
+          <a href="mailto:anisimovsergii@gmail.com" target="_blank"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" width="104px" height="100px"> </a></p>
+          <br>
+    </div>
+
+  </body>
 </html>
