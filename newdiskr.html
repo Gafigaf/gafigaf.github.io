@@ -12,10 +12,35 @@
             var a = parseFloat(ed[0]);
             var b = parseFloat(ed[1]);
             var c = parseFloat(ed[2]);
+            let sign1 = "";
+            let sign2 = "";
+            let sign3 = "";
+
+            if(a > 0){
+                sign1 = '';
+            }
+            else{
+                sign1 = "";
+            }
+
+            if(b > 0){
+                sign2 = "+";
+            }
+            else{
+                sign2 = "";
+            }
+
+            if(c > 0){
+                sign3 = "+";
+            }
+            else{
+                sign3 = "";
+            }
 
             var b_k = b*b;
             var diskr =  b_k - 4 * a * c;
-
+            
+            pre_equation.innerHTML = sign1 + a +"x² " + sign2+ " " + b + "x " + sign3 +" " + c + " = 0";  
             var x1r = (-b + (Math.sqrt(diskr))) / (2*a)
             var x2r = (-b - (Math.sqrt(diskr))) / (2*a)
             equation.innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c + " = " +diskr +"<br>"+"√D = " + Math.sqrt(diskr);
@@ -54,6 +79,7 @@
             eq_input.value = '';
             err.innerHTML = " ";
             equation.innerHTML = " ";
+            pre_equation.innerHTML = " ";
             x1.innerHTML = " ";
             x2.innerHTML = " ";
         }
@@ -63,34 +89,38 @@
 </head>
 <body>
 <style type="text/css">
+    
 @media (prefers-color-scheme: dark) {
     body{
         background: #161616;
         color: #FFFFFF;
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap')
+;
 
 
 body{
-    background: #FFFFFF;
+    background: #121125;
     text-align: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    color:#30475E;
+    font-family: 'Roboto+Slab', sans-serif;
+    color:#ffffff;
 }
 input{ 
+    border-radius: 5px;
+    outline: none;
     font-size: 25px;
     text-align: center;
-    background: #FFFFFF;
-    color:#30475E;
+    background: #ffffff;
+    color:#121125;
     
 }
 p{
     font-size: 22px;
 }
 #err{
-    color:#F05454;
+    color:#FE0C41;
 }
 h2{
     margin-top: 5%;
@@ -105,16 +135,16 @@ footer{
 }
 
 #cleartxt{
-    background: #EFEFEF;
-    color: #30475E;
+    background: #FE0C41;
     border: none;
+    color: #ffffff;
     font-size: large;
     padding: 10px;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
 }
 #cleartxt:hover{
-    background: #F05454;
+    background: #a80b2d;
     color: #FFF;
 }
 
@@ -123,9 +153,11 @@ footer{
 <h2>D= b² - 4 * a * c </h2>
 <input placeholder="a _ b _ c" id="eq_input" type="text" oninput="count()" autofocus="true"></input><br><br>
 <button id = "cleartxt" onclick="cleatt()">Clear</button>
+<br>
+<p id="pre_equation"></p>
 <p id = "equation"></p>
 <p id = "result"></p>
-<p id = "err"></p>
+<b><p id = "err"></p></b>
 <p id = "x1"></p><p id = "x2"></p>
 <footer><img src="https://raw.githubusercontent.com/Gafigaf/Images/13fc81a48dfff060f94d34cb774df873bb542a37/216643_help_icon.svg"/ width="22px" height="22px" onclick="show()"> </footer>
 
