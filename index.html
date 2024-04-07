@@ -6,12 +6,17 @@
     <meta charset="UTF-8">
     <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+
+@font-face {
+    font-family: 'e-Ukraine-Light'; /*a name to be used later*/
+    src: url('https://gafigaf.github.io/e-Ukraine-Light.otf'); /*URL to font*/
+}
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'e-Ukraine-Light';
 }
-        * {
+  * {
   box-sizing: border-box;
 }
 
@@ -52,7 +57,7 @@ body{
   text-align: center;
   transition: ease .5s;
   text-align: center;
-  background: #1A68EB;
+  background: linear-gradient(137deg, rgba(26,104,235,1) 0%, rgba(75,140,213,1) 100%);
   color: #f1f1f1;
 
 }
@@ -70,11 +75,13 @@ body{
 .block:hover{
     box-shadow: 0px 0px 44px 29px rgba(0,0,0,0.08);
 }
-
+.block p{
+  line-height: 20px;
+}
 .block a{
     padding: 8px 20px;
-    background: #1A68EB;
-    border: 1px solid #1A68EB;
+    /* background: #1A68EB; */
+    background: linear-gradient(137deg, rgba(26,104,235,1) 0%, rgba(75,140,213,1) 100%);
     margin-top: 15px;
     border-radius: 15px;
     color: #f1f1f1;
@@ -159,15 +166,14 @@ body{
 
     <div class="infor">
         <h2>Мої контакти:</h2>
-        <p>© Anisimov Sergii, 2020 - 2023</p>
         <br>
         <p><a href="https://github.com/Gafigaf" target="_blank"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" width="104px" height="100px"></a>
 
           <a href="https://codepen.io/sergii-annisimov" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" width="104px" height="100px"></a>
 
-          <a href="mailto:anisimovsergii@gmail.com" target="_blank"><img src="https://raw.githubusercontent.com/Gafigaf/Images/master/newemailicon.png" width="104px" height="100px"> </a></p>
+          <a href="mailto:anisimovsergii@gmail.com" target="_blank"><img src="https://raw.githubusercontent.com/Gafigaf/gafigaf.github.io/master/utilities/email_t.png" width="104px" height="100px"> </a></p>
           <br>
+          <p>Anisimov Sergii, 2020 - <script>document.write(new Date().getFullYear())</script></p>
     </div>
-
   </body>
 </html>
