@@ -96,16 +96,17 @@
         color: #FFFFFF;
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap')
-;
-
+@font-face {
+    font-family: 'e-Ukraine-Light'; /*a name to be used later*/
+    src: url('https://gafigaf.github.io/e-Ukraine-Light.otf'); /*URL to font*/
+}
 
 body{
-    background: #121125;
+    background: #ffffff;
     text-align: center;
     align-items: center;
-    font-family: 'Roboto+Slab', sans-serif;
-    color:#ffffff;
+    font-family: 'e-Ukraine-Light';
+    color:#121125;
 }
 input{ 
     border-radius: 5px;
@@ -135,7 +136,7 @@ footer{
 }
 
 #cleartxt{
-    background: #FE0C41;
+    background: #d94444;
     border: none;
     color: #ffffff;
     font-size: large;
@@ -144,7 +145,7 @@ footer{
     transition: 0.2s ease-in-out;
 }
 #cleartxt:hover{
-    background: #a80b2d;
+    background: #c63e3e;
     color: #FFF;
 }
 
@@ -159,7 +160,7 @@ footer{
 <p id = "result"></p>
 <b><p id = "err"></p></b>
 <p id = "x1"></p><p id = "x2"></p>
-<footer><img src="https://raw.githubusercontent.com/Gafigaf/Images/13fc81a48dfff060f94d34cb774df873bb542a37/216643_help_icon.svg"/ width="22px" height="22px" onclick="show()"> </footer>
+<footer><img src="https://raw.githubusercontent.com/Gafigaf/gafigaf.github.io/master/utilities/question.png"/ width="33px" height="33px" onclick="show()"> </footer>
 
 </body>
 </html>
