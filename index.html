@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Main</title>
+    <title>Anisimov Sergii</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <style>
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
-
-@font-face {
-    font-family: 'e-Ukraine-Light'; /*a name to be used later*/
-    src: url('https://gafigaf.github.io/e-Ukraine-Light.otf'); /*URL to font*/
-}
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 body{
-    font-family: 'e-Ukraine-Light';
+    font-family: "Unbounded", sans-serif;
+    background-color: #282e33;
+    
 }
-  * {
+
+* {
   box-sizing: border-box;
 }
 
@@ -34,6 +32,7 @@ body{
 
 .block {
   width: 100%;
+  background-color:#33393f;
   max-width: 400px;
   margin: 0 10px 20px;
   padding-top: 50px;
@@ -41,9 +40,10 @@ body{
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 15px;
-  border: 1px solid #1A68EB;
+  border: 1px solid #556964;
   text-align: center;
-  transition: all .5s;
+  color:#f1f1f1;
+  transition: all 1s ease 0s;
 }
 
 .infor{
@@ -53,11 +53,16 @@ body{
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 15px;
-  border: 1px solid #1A68EB;
+  border: 1px solid #00904a;
   text-align: center;
   transition: ease .5s;
   text-align: center;
-  background: linear-gradient(137deg, rgba(26,104,235,1) 0%, rgba(75,140,213,1) 100%);
+  background: rgba(7, 194, 110, 0.74);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(7, 194, 110, 0.3);
   color: #f1f1f1;
 
 }
@@ -73,7 +78,9 @@ body{
 }
 
 .block:hover{
-    box-shadow: 0px 0px 44px 29px rgba(0,0,0,0.08);
+    border: 1px solid #049956;
+    background: linear-gradient(126deg, rgb(3, 131, 73) 0%, rgba(51,57,63,1) 100%);
+    
 }
 .block p{
   line-height: 20px;
@@ -81,7 +88,7 @@ body{
 .block a{
     padding: 8px 20px;
     /* background: #1A68EB; */
-    background: linear-gradient(137deg, rgba(26,104,235,1) 0%, rgba(75,140,213,1) 100%);
+    background: #08a34b;
     margin-top: 15px;
     border-radius: 15px;
     color: #f1f1f1;
@@ -91,11 +98,10 @@ body{
 
 .block a:hover{
     padding: 8px 20px;
-    border: 1px solid #1A68EB;
     margin-top: 15px;
     border-radius: 15px;
-    background: #fff;
-    color: #1A68EB;
+    background: #07c26e;
+    color: #f1f1f1;
     text-decoration: none;
 }
 
