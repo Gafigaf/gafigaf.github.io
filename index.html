@@ -18,6 +18,27 @@ body{
   box-sizing: border-box;
 }
 
+::selection {
+  color: #f1f1f1;
+  background: #07a75f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #33393F; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #169C5E; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #07c26e; 
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -79,16 +100,20 @@ body{
 
 .block:hover{
     border: 1px solid #049956;
-    background: linear-gradient(126deg, rgb(3, 131, 73) 0%, rgba(51,57,63,1) 100%);
-    
+    background: linear-gradient(
+    180deg,
+  hsl(210deg 11% 22%) 37%,
+  hsl(153, 98%, 21%) 110%
+);
 }
+
 .block p{
   line-height: 20px;
 }
 .block a{
     padding: 8px 20px;
     /* background: #1A68EB; */
-    background: #08a34b;
+    background: #169C5E;
     margin-top: 15px;
     border-radius: 15px;
     color: #f1f1f1;
