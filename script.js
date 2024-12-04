@@ -11,13 +11,6 @@ function count(){
 	var reshx2 = -b +" - "+ kor_d + " ÷ " + 2*a + " = " + ((-b-kor_d)/2);
 	var letters = /^[a-zA-Zа-яА-ЯёЁ]+$/;
 
-	
-	// alert(reshx1);
-	// alert(reshx2);
-	//todo choto ia spat :)
-	
-
-
 
 	document.getElementById("result").innerHTML = "D = "+b+"² "+"-4 * "+a +" * "+c+" = "+ D;
 	if (D < 0) {
@@ -65,12 +58,11 @@ function ochist(){
 //Kvadrat sumy
 
 function countt() {
-	hop.style.color = "#000";
 	var a1 = parseInt(document.getElementById("first").value);
 	var b2 = parseInt(document.getElementById("second").value);
 	var n = document.getElementById("SelectMyLove").options.selectedIndex;
-	var ob  = "(" + a1 + "+" + b2 +")² = " + a1*a1 + "+"+2*a1*b2 +"+"+ b2*b2 + "= " + parseInt(a1*a1 + 2 * a1*b2 + b2*b2);
-	var m_ob = "(" + a1 + "-" + b2+")² = " + a1*a1 + ""+ -2*a1*b2 +"+"+ b2*b2 + "=" + parseInt(a1*a1 + -2 * a1*b2 + b2*b2);
+	var ob  = "(" + a1 + "+" + b2 +")² = " + a1*a1 + "+"+2*a1*b2 +"+"+ b2*b2 + " = " + parseInt(a1*a1 + 2 * a1*b2 + b2*b2);
+	var m_ob = "(" + a1 + "-" + b2+")² = " + a1*a1 + ""+ -2*a1*b2 +"+"+ b2*b2 + " = " + parseInt(a1*a1 + -2 * a1*b2 + b2*b2);
 	var chbox;
 	var chbox2;
 	var bukva =(document.getElementById("buk").value);
@@ -87,21 +79,30 @@ function countt() {
 	if (n == 0) {
 		document.getElementById("hop").innerHTML = ob;
 	
-	if (isNaN(a1,b2)) {
-		swal("Ошибка", "Введите числа", "error");
+	if(isNaN(a1)){
+		swal("Помилка", "Ви не ввели a", "error");
 		document.getElementById("hop").innerHTML = "";
-		hop.style.color = "red";
+	}
+
+	if(isNaN(b2)){
+		swal("Помилка", "Ви не ввели b", "error");
+		document.getElementById("hop").innerHTML = "";
+	}
+
+	if (isNaN(a1,b2)) {
+		swal("Помилка", "Ви нічого не ввели", "error");
+		document.getElementById("hop").innerHTML = "";
 	}
 
 	if (chbox.checked) {
 		document.getElementById("hop").innerHTML = s_b;
 		if(isFinite(bukva)){
-			swal("Ошибка", "Вы ввели цифру", "error");
+			swal("Помилка", "Ви ввели цифру", "error");
 			document.getElementById("hop").innerHTML = "";
-			hop.style.color = "red";
+			
 		}
-		if (bukva.length == 2) {
-			swal("Ошибка", "Вы ввели более чем одну букву в одну строчку", "error");
+		if (bukva.length >= 2) {
+			swal("Помилка", "Ви ввели більш ніж одну літеру в рядок", "error");
 			document.getElementById("hop").innerHTML = "";
 		}
 	}
@@ -109,12 +110,12 @@ function countt() {
 	if (chbox2.checked) {
 		document.getElementById("hop").innerHTML = s_b2;
 		if(isFinite(bukva2)){
-			swal("Ошибка", "Вы ввели цифру / Вы ничего не ввели", "error");
+			swal("Помилка", "Ви ввели цифру / Ви нічого не ввели", "error");
 			document.getElementById("hop").innerHTML = "";
-			hop.style.color = "red";
+			
 		}
-			if (bukva2.length == 2) {
-			swal("Ошибка", "Вы ввели более чем одну букву в одну строчку", "error");
+			if (bukva2.length >= 2) {
+			swal("Помилка", "Ви ввели більш ніж одну літеру в рядок", "error");
 			document.getElementById("hop").innerHTML = "";
 		}
 	}
@@ -128,25 +129,25 @@ function countt() {
 		document.getElementById("hop").innerHTML = m_ob;
 
 	if (isNaN(a1,b2)) {
-		swal("Ошибка", "Введите числа", "error");
+		swal("Помилка", "Введіть числа", "error");
 		document.getElementById("hop").innerHTML = "";
-		hop.style.color = "red";
+		
 	}	
 	if (chbox.checked) {
 		document.getElementById("hop").innerHTML = s_b_min;
 		if(isFinite(bukva)){
-			swal("Ошибка", "Вы введи цифру", "error");
+			swal("Помилка", "Ви ввели цифру", "error");
 			document.getElementById("hop").innerHTML = "";
-			hop.style.color = "red";
+			
 
 		}
 	}
 	if (chbox2.checked) {
 		document.getElementById("hop").innerHTML = s_b_min2;
 		if(isFinite(bukva2)){
-			swal("Ошибка", "Вы ввели цифру / Вы ничего не ввели", "error");
+			swal("Помилка", "Ви ввели цифру / Ви нічого не ввели", "error");
 			document.getElementById("hop").innerHTML = "";
-			hop.style.color = "red";
+			
 		}
 
 	}
