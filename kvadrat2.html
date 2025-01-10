@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадрат суми / різниці</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="content-block">
+            <div class="info">
+                <h1>Квадрат суми / різниці</h1>
+                <h4>Сергій Анісімов • 2020 -
+                    <script>document.write(new Date().getFullYear())</script>
+                </h4>
+            </div>
+            <input type="" id="first" placeholder="a" class="input_value">
+
+            <input type="text" size="1" id="buk" placeholder="буква"> <input type="checkbox" id="check"
+                onchange="fun1()" class="regular-checkbox">
+
+            <div class="custom-select">
+                <form id="FormMyLove" name="FormMyLove" method="GET">
+                    <select name="SelectMyLove" id="SelectMyLove" class="custom-select">
+                        <option VALUE="1">+</option>
+                        <option VALUE="2">-</option>
+                    </select>
+                </form>
+            </div>
+
+            <input type="" id="second" placeholder="b" class="input_value"> <input type="text" size="1" id="buk2"
+                placeholder="буква"> <input type="checkbox" id="check2" onchange="fun2()" class="regular-checkbox">
+
+            <div class="buttons">
+                <button type="button" value="Порахувати" onclick="countt()" id="vvod">Порахувати</button>
+                <button type="button" value="Очистити" onclick="ochistt()" id="ohict">Очистити</button>
+
+            </div>
+            <div class="result">
+                <p id="hop"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

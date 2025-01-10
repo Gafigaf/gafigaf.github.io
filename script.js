@@ -105,6 +105,9 @@ function countt() {
 			swal("Помилка", "Ви ввели більш ніж одну літеру в рядок", "error");
 			document.getElementById("hop").innerHTML = "";
 		}
+		if (bukva.length >= 3) {
+			alert("123");
+		}
 	}
 
 	if (chbox2.checked) {

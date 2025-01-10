@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --background:#185ADB;
+    --background:#2563eb;
     --border: #0036a280;
     --white: #FFF;
     --box-shadow:#1859db73;
@@ -53,6 +53,7 @@ html {
 .info {
     word-break: keep-all;
     margin-bottom: 3.5rem;
+    font-size: 1rem;
 }
 
 .info h4{
@@ -67,7 +68,8 @@ html {
     padding-top: 40px;
     padding-bottom: 40px;
     padding:auto;
-    border: 1px solid var(--border);
+    border: 1px solid var(--background);
+    margin-bottom: 3.6rem;
 }
 
 input {
@@ -79,15 +81,10 @@ input {
     padding-left: 2px;
     text-align: center;
     border: 1px solid var(--background);
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
 }
-
-input:hover{
-    box-shadow: 0 1px 25px var(--box-shadow);
-}
-
 
 form {
     margin-bottom: 10px;
@@ -111,16 +108,18 @@ button {
     color: #FFF;
     border: 1px solid var(--background);
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 12px;
     font-size: 1.2rem;
     font-family: "Inter", sans-serif;
     transition: all 0.3s;
+    padding: 5px 15px 5px 15px;
 }
 
 #ohict {
-    color: rgb(233, 50, 50);
+    color: rgb(255, 255, 255);
     border: 1px solid hsl(0, 73%, 40%);
     transition: all 0.3s;
+    padding: 5px 15px 5px 15px;
 }
 
 #ohict:hover{
@@ -165,13 +164,58 @@ button {
 	color: var(--white);
 }
 
-@media (max-width: 768px) {
+.instruction{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15px;
+    color: rgba(219, 219, 219, 0.486);
+}
+
+@media (max-width: 1024px) {
     .result {
-        font-size: 1.2rem;
+        font-size: 2rem;
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .regular-checkbox:checked:after{
         left: 3px;
+    }
+    input{
+        font-size: 2rem;
+    }
+    .info h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .result {
+        font-size: 1.5rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .regular-checkbox:checked:after{
+        left: 3px;
+    }
+    input{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .result {
+        font-size: 1.3rem;
+    }
+    .regular-checkbox:checked:after{
+        left: 3px;
+    }
+
+    .info h1{
+        font-size: 1.5rem;
+    }
+    input{
+        font-size: 0.9rem;
     }
 }

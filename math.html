@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятори формул</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            color: aliceblue;
+            flex: 1;
+        }
+
+        .column-1, .column-2, .column-3 {
+            flex: 1;
+            padding: 20px;
+            min-height: 50vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .column-1 {
+            background:#1e59d8;
+        }
+        
+        .column-2 {
+            background:#1a45bd;
+        }
+        
+        .column-3 {
+            background:#1c3ba0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h1{
+            font-weight: 700;
+        }
+
+        .button{
+            margin-top: 20px;
+            border: 1px solid white;
+            padding:5px 40px 5px 40px;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .button:hover{
+            background: white;
+            color: black;
+
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column-1">
+            <h1>Дискримінант</h1>
+            <p>Призначений для обчислення дискримінанта (D=b²-4*a*c)</p>
+            <a href="https://gafigaf.github.io/newdiskr.html" target="_blank" rel="noopener noreffer">
+            <div class="button">
+                Перейти
+            </div>
+        </a>
+        </div>
+        <div class="column-2">
+            <h1>Квадрат суми / різниці</h1>
+            <p>Призначений для обчислення квадрата суми (a±b)²</p>
+            <a href="https://gafigaf.github.io/kvadrat.html" target="_blank" rel="noopener noreffer">
+                <div class="button">
+                    Перейти
+                </div>
+            </a>
+        </div>
+        <div class="column-3">
+            <h1>Різниця квадратів</h1>
+            <p>Призначений для обчислення різниці квадратів (a-b)(a+b) = a²+b²</p>
+            <a href="https://gafigaf.github.io/r_k.html" target="_blank" rel="noopener noreffer">
+                <div class="button">
+                    Перейти
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
